@@ -20,7 +20,6 @@ $("#save").click(function(){
     else if($("#admin-phone").val().length!=11){
         alert("手机号长度不对");
     }
-
     else if($("#admin-phone").val()==''){
         alert("电子邮件不能为空");
     }
