@@ -40,18 +40,7 @@
 #admin-admin h2{
       margin-left:8%;
     }
-    form p{
-      margin-left:10%;
-    }
-    form p input{
-      margin-left:2%;
-    }
-    form p{
-      font-size:2rem;
-    }
-    form p span{ 
-      color:red;
-    }
+
     .list-group-item a{ 
       color:black;
     }
@@ -59,9 +48,21 @@
       color:blue;
       text-decoration:none;
     }
-    form p span{
-      color:red;
-    }
+form table{
+    margin-left:10%;
+    border-collapse:   separate;
+    border-spacing:   10px;
+}
+
+form table tr td{
+    font-size:2.3rem;
+}
+form table tr td span{
+    color:red;
+}
+form table tr td button{
+    margin-left:20%;
+}
      #add-del a{
     	color:black;
     	
