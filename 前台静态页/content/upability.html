@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>能力提升</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+    a:hover{
+        text-decoration:none;
+    }
+	#search{
+		height: 27px;
+	}
+	.dropdown{
+		width:120px;
+	}
+	.dropdown-menu{
+		min-width:120px;
+	}
+  #hrr{
+    width:200px;
+    border:1px solid black;
+    margin-left: 5px;
+  }
+  #hd{
+    margin-left: 30%;
+    
+  }
+  #btn{
+    float:right;
+  }
+  #ull{
+    list-style: none;
+  }
+  #hrr{
+    width:200px;
+    border:1px solid black;
+  }
+   #ulll{
+    list-style: none;
+    padding-left:9px;
+  }
+  #ulll li{
+    padding-top: 8px;
+  }
+  nav #we{ width:1000px; height:30px; margin:0px auto}
+nav #we>li{ display:block; float:left; padding:0px 0px; }
+nav #we>li>ul{float: left; z-index: 999;}
+nav #we>li>ul>li{/*z-index: 999;*/float: left;}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <!--网站顶部-->
+    <div class="row" style="margin-top:10px"> 
+        <div class="col-md-8"><img src="../images/logo.png"/ width="200px" height="50px"></div>
+        <div class="col-md-3" style="margin-top:10px">
+            <input type="text" name="search" value="请输入..." id="search"/>
+            <button type="button" class="btn btn-primary btn-sm">搜索</button>
+        </div>
+          <div class="col-md-1">
+            <img src="../images/user.jpg" width="50%" style="margin-left:10%"/>
+            <p><a href="../personalcenter/peraonal-message.html
+">个人中心</a></p>
+        </div>
+    </div>
+    <!--导航-->
+   <div class="row">
+    <div class="col-md-12 column">
+      <nav class="navbar navbar-default" style="background-color:rgb(0,112,189);"> 
+         <ul class="nav navbar-nav" id="we">
+             <li style="margin-left:25px" width="100%"height="100%"><a href="#" style="font-size:22px;font-weight:bold;color:white">首页</a></li>
+             <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">语文</a>
+               <ul class="dropdown-menu" style="background-color:#CCC;">
+                 <li><a href="../chinese/chineseone.html">高一语文</a></li>
+                 <li><a href="../chinese/chinesetwo.html">高二语文</a></li>
+                 <li><a href="../chinese/chinesethree.html">高考专题</a></li>
+              </ul> 
+            </li>
+            <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">数学</a>
+               <ul class="dropdown-menu" style="background-color:#CCC;">
+                 <li><a href="../math/mathone.html">高一数学</a></li>
+                 <li><a href="../math/mathone.html">高二数学</a></li>
+                 <li><a href="../math/mathone.html">高考专题</a></li>
+              </ul> 
+            </li>
+            <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">英语</a>
+               <ul class="dropdown-menu" style="background-color:#CCC;">
+                 <li><a href="../english/englishone.html">高一英语</a></li>
+                 <li><a href="../english/englishtwo.html">高二英语</a></li>
+                 <li><a href="../english/englishthree.html">高考专题</a></li>
+              </ul> 
+            </li>
+             <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">文综</a>
+               <ul class="dropdown-menu" style="background-color:#CCC;">
+                 <li><a href="../wenzong/jiaocaitongbu.html">教材同步</a></li>
+                 <li><a href="../wenzong/gaokaomoni.html">高考模拟</a></li>
+                 <li><a href="../wenzong/beikaocelue.html">备考策略</a></li>
+                 <li><a href="../wenzong/gaokaozhenti.html">高考真题</a></li>
+              </ul> 
+            </li>
+            <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">理综</a>
+               <ul class="dropdown-menu" style="background-color:#CCC;">
+                  <li><a href="jiaocaitongbu.html">教材同步</a></li>
+                 <li><a href="gaokaomoni.html">高考模拟</a></li>
+                 <li><a href="beikaocelue.html">备考策略</a></li>
+                 <li><a href="gaokaozhenti.html">高考真题</a></li>
+              </ul> 
+            </li>
+            <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center;">热点资讯</a>
+            </li>
+        <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">关于我们</a>
+            </li>
+         </ul>
+      </nav>
+    </div>
+    </div>
+    <!--banner图-->
+    
+
+  <!--面包屑-->
+  <div class="row" style="margin-top:10px;border-bottom:1px solid black;">
+    <div class="col-md-12 column">
+      <ul class="breadcrumb">
+        <li>
+           <a href="#">首页</a>
+        </li>
+        <li>
+           <a href="#">数学</a>
+        </li>
+        <li>
+           <a href="#">高二数学</a>
+        </li>
+        <li class="active">
+          能力提升
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+  <!--内容-->
+  <div class="row clearfix">
+    <div class="col-md-8 column">
+     <div style="text-align:center;">
+      <h1>
+        2017高考数学常用知识点汇总
+      </h1>
+      <p>
+        2016-10-09&nbsp;&nbsp;10:27:35&nbsp;&nbsp;来源：博学苑
+      </p>
+      <p>
+          2017高考正在紧张的备考阶段，高考数学都有哪些必备的知识点，是同学们想要了解的，以下是博学苑在线高考网小编整理的2017高考数学常用知识点汇总，快来收藏学习吧。
+      </p>
+      <br/><br/>
+      <p style="font-size:14px;font-weight:bold;">第一章 集合与函数概念</p>
+      <p style="font-size:14px;font-weight:bold;">【1.1.1】集合的含义与表示</p><br/><br/>
+      </div>
+      <ul id="ull">
+        <li>
+         （1）集合的概念<br/>集合中的元素具有确定性、互易性和无序性。
+        </li>
+        <li>
+          （2）常用树集及其记法<br/>N表示自然数集，N*或N+表示正整数集，Z表示整数集，Q表示有理数集，R表示实数集。
+        </li>
+        <li>
+          （3）集合与元素间的关系<br/>对象a与集合M的关系是a∈M，或者a∉M，两者必居其一
+        </li>
+        <li>
+          （4）集合的表示法 <br/>①自然语言法：用文字叙述来表述集合
+      <br/> ②列举法：把集合中的元素-----列举出来，鞋子大括号内表述集合
+       <br/>③描述法：{x|x具有的性质}，其中x为集合的代表元素
+       <br/>④图示法：用数轴或韦恩图来表示集合
+        </li>
+        <li>
+          （5）集合的分类
+       <br/>①含有有限个元素的集合叫做有限集。
+      <br/> ②含有无限个元素的集合叫做无限集。
+      <br/> ③不含有任何元素的集合叫做空集。
+        </li>
+      </ul>
+      <p style="font-size:14px;font-weight:bold;text-align:center;padding-top:30px;">【1.1.2】集合间的基本关系</p><br/><br/>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              名称
+            </th>
+            <th>
+              记号
+            </th>
+            <th>
+              意义
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              子集
+            </td>
+            <td>
+              A包含B
+（或
+B包含A）
+            </td>
+            <td>
+              A中的任一元素都
+输入B
+            </td>
+          </tr>
+         <tr>
+            <td>
+              子集
+            </td>
+            <td>
+              A包含B
+（或
+B包含A）
+            </td>
+            <td>
+              A中的任一元素都
+输入B
+            </td>
+          </tr>
+          <tr>
+            <td>
+              子集
+            </td>
+            <td>
+              A包含B
+（或
+B包含A）
+            </td>
+            <td>
+              A中的任一元素都
+输入B
+            </td>
+          </tr>
+          <tr>
+            <td>
+              子集
+            </td>
+            <td>
+              A包含B
+（或
+B包含A）
+            </td>
+            <td>
+              A中的任一元素都
+输入B
+            </td>
+          </tr>
+          <tr>
+            <td>
+              子集
+            </td>
+            <td>
+              A包含B
+（或
+B包含A）
+            </td>
+            <td>
+              A中的任一元素都
+输入B
+            </td>
+          </tr>
+        </tbody>
+      </table>
+     <h4 style="padding-top:30px;">点击购买:<a href="#">2017高考数学常用知识点汇总</a></h4>
+     <div class="row clearfix">
+    <div class="col-md-2 column" style="background-color:rgb(247,119,102);margin-left:2px;">
+    高考报<br/>名
+    </div>
+    <div class="col-md-3 column" style="background-color:rgb(147,218,174);margin-left:2px;">
+    高考志愿<br/>填报
+    </div>
+    <div class="col-md-2 column" style="background-color:rgb(149,207,224);margin-left:2px;">
+    211大学<br/>名单
+    </div>
+    <div class="col-md-3 column" style="background-color:rgb(249,160,148);margin-left:2px;">
+    高考生招生<br/>办网址
+    </div>
+    
+  </div>
+     <div class="row clearfix" style="margin-top:2px;">
+      <div class="col-md-3 column" style="background-color:rgb(147,218,174);margin-left:2px;">
+    状元经验<br/>分享
+    </div>
+    <div class="col-md-2 column" style="background-color:rgb(247,119,102);margin-left:2px;">
+    期中<br/>试卷
+    </div>
+    <div class="col-md-3 column" style="background-color:rgb(249,160,148);margin-left:2px;">
+    高考资料<br/>下载
+    </div>
+     <div class="col-md-2 column" style="background-color:rgb(149,207,224);margin-left:2px;">
+    期末<br/>试卷
+    </div>
+    
+  </div>
+
+
+
+
+    </div>
+    <div class="col-md-4 column">
+       <div style="margin-top:150px;">
+         <h1 style="color:rgb(0,204,255);">相关知识点</h1>
+         <hr id="hrr"/>
+         <ul id="ulll">
+        <li>
+          2017高考数学三角函数汇总
+        </li>
+        <li>
+          2017高考语文备考：文言文中的谥号解读
+        </li>
+        <li>
+          2017高考数学常见易错点汇总
+        </li>
+        <li>
+          2017高考数学三角函数汇总
+        </li>
+        <li>
+          2017高考语文备考：文言文中的谥号解读
+        </li>
+        <li>
+          2017高考数学常见易错点汇总
+        </li>
+        <li>
+          2017高考数学三角函数汇总
+        </li>
+        <li>
+          2017高考语文备考：文言文中的谥号解读
+        </li>
+        <li>
+          2017高考语文备考：文言文中的谥号解读
+        </li>
+        <li>
+          2017高考数学常见易错点汇总
+        </li>
+        <li>
+          2017高考数学三角函数汇总
+        </li>
+        <li>
+          2017高考语文备考：文言文中的谥号解读
+        </li>
+         <li style="padding-left:200px;">
+          <a href="#"><h4>更多...</h4></a>
+        </li>
+      </ul>
+      
+       </div>
+    </div>
+
+      <div class="row">
+      <div class="col-md-12" style="margin-top:10px; background-color:rgb(0,112,189);">
+        <div class="col-md-7 col-md-offset-5" style="margin-top:2%">
+          <p>冀200-1012-12</p>
+        </div>
+        <div style="margin-left:440px">
+         <p>河北省石家庄市河北师范大学</p>
+        </div>  
+      </div>
+    </div>
+
+  </div>
+ <!--页脚-->
+ 
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
