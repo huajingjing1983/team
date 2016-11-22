@@ -34,7 +34,9 @@
 			background-color:gray;
 		}
 		/**/
-    
+#admin-table{
+	margin-top:0%;
+}
 #admin-admin h2{
       margin-left:8%;
     }
