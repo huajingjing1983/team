@@ -10,7 +10,7 @@
         text-decoration:none;
     }
 	#search{
-		height: 27px;
+		height: 29px;
 	}
 	.dropdown{
 		width:120px;
@@ -30,35 +30,34 @@
   td{
     height:35px;
   }
-   nav #we{ width:1000px; height:30px; margin:0px auto}
+    nav #we{ width:1200px; height:30px; margin:0px auto;padding-left: 55px;}
 nav #we>li{ display:block; float:left; padding:0px 0px; }
 nav #we>li>ul{float: left; z-index: 999;}
 nav #we>li>ul>li{/*z-index: 999;*/float: left;}
+#nar { padding-right: 30px; }
 </style>
 </head>
 
 <body>
 <div class="container">
     <!--网站顶部-->
-    <div class="row" style="margin-top:10px"> 
-        <div class="col-md-6"><img src="../images/logo.png"/ width="200px" height="50px"></div>
-        <div class="col-md-4" style="margin-top:10px">
-            <!-- <input type="text" name="search" value="请输入..." id="search"/>
-            <button type="button" class="btn btn-primary btn-sm">搜索</button> -->
+    <div class="row" style="margin-top:0.5%"> 
+        <div class="col-xs-2 col-md-8"><img src="../images/logo.png"/ width="30%"></div>
+        <div class="col-xs-6 col-md-3" style="margin-top:2%">
+            <input type="text" name="search" value=""/ id="search">
+            <button type="button" class="btn btn-primary btn-sm">搜索</button>
         </div>
-         <div class="col-md-1">
+        <div class="col-xs-4 col-md-1" style="margin-top:1%">
             <img src="../images/user.jpg" width="50%" style="margin-left:10%"/>
-            <p><a href="../personalcenter/peraonal-message.html
-">个人中心</a></p>
+            <p><a href="../personalcenter/peraonal-message.html">个人中心</a></p>
         </div>
-
     </div>
     <!--导航-->
     <div class="row">
     <div class="col-md-12 column">
       <nav class="navbar navbar-default" style="background-color:rgb(0,112,189);"> 
          <ul class="nav navbar-nav" id="we">
-             <li style="margin-left:25px" width="100%"height="100%"><a href="#" style="font-size:22px;font-weight:bold;color:white">首页</a></li>
+             <li style="margin-left:25px" width="100%"height="100%"><a href="#" style="font-size:22px;font-weight:bold;color:white" id="nar">首页</a></li>
              <li class="dropdown">
                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">语文</a>
                <ul class="dropdown-menu" style="background-color:#CCC;">
@@ -101,11 +100,11 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
                  <li><a href="../lizong/gaokaozhenti.html">高考真题</a></li>
               </ul> 
             </li>
-            <li class="dropdown" style="width:150px;">
-               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center;">热点资讯</a>
+           <li class="dropdown" style="width:150px;">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="../News/news.html" style="font-size:22px;font-weight:bold;color:white;text-align:center;">热点资讯</a>
             </li>
-        <li class="dropdown" style="width:150px;">
-               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">关于我们</a>
+            <li class="dropdown" style="width:150px;">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="../About/about.html" style="font-size:22px;font-weight:bold;color:white;text-align:center">关于我们</a>
             </li>
          </ul>
       </nav>
@@ -141,7 +140,7 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
   </div>
   <!--面包屑-->
   <div class="row clearfix" style="margin-top:10px;">
-    <div class="col-md-9 column">
+    <div class="col-md-12 column">
       <ul class="breadcrumb">
         <li>
            <a href="#">首页</a>
@@ -150,14 +149,11 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
            <a href="#">文科综合</a>
         </li>
         <li class="active">
-          文科模拟
+          高考模拟
         </li>
       </ul>
     </div>
-    <div class="col-md-3 column" style="mqrgin-right:2px;">
-      <input type="text" name="search" value="请输入..." id="search"/>
-      <button type="button" class="btn btn-primary btn-sm">Search</button>
-    </div>
+   
   </div>
   <!--内容-->
   <div class="row clearfix">
@@ -419,8 +415,8 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
 <div class="container" style="background:rgb(0,112,189);margin-top:10px;">
   <div class="row clearfix">
     <div class="col-md-12 column">
-       <p style="text-align:center;padding-top:30px;">地址: 石家庄市裕华区南二环东路20号    ® 石家庄河北师范大学软件学院</p>
-            <br/><p style="text-align:center;">冀ICP备XXXXXXXX号-X    站长统计</p>
+       <p style="text-align:center;padding-top:20px;">地址: 石家庄市裕华区南二环东路20号     石家庄河北师范大学软件学院</p>
+            <p style="text-align:center;">冀ICP备XXXXXXXX号-X    站长统计</p>
     </div>
   </div>
 </div>
