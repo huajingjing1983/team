@@ -4,17 +4,14 @@
     <title>编辑视频</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
     <style type="text/css">
       #logo{
         margin-left:18%;
       }
      
-      #footer{
-        background-color: blue;
-      }
       #header{
-        background-color: blue;
+        background:rgb(0,112,189)
       }
        #list{
         background-color: gray;
@@ -30,6 +27,9 @@
        h4{
         text-align: center;
       }
+      #addvideos{
+        color: blue;
+      }
       form span{
         color: red;
       }
@@ -40,6 +40,21 @@
       }.list-group-item a:hover{
         
         color: blue;
+      }
+      form table{
+        margin-left:10%;
+        border-collapse:   separate;   
+        border-spacing:   10px; 
+      }
+
+      form table tr td{
+        font-size:1.5rem; 
+      }
+      form table tr td span{
+        color:red;
+      }
+      form table tr td button{
+        margin-left: 20%;
       }
     </style>
   </head>
@@ -124,27 +139,67 @@
                   </li>
                 </ul>
                 <div class="row" id="admin-admin"><h2>编辑视频</h2></div><br/>
-                <form action="form_action.asp" method="get">
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID<span>*&nbsp;</span> <input type="text" name="fname" /><br/><br/>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 年级 &nbsp;&nbsp;<input type="text" name="fname" /><br/><br/>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 科目<span>*&nbsp;</span> <input type="text" name="fname" /><br/><br/>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                 视频名称<span>*&nbsp;</span> <input type="text" name="bname" /><br/><br/>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 上传者 &nbsp;&nbsp;<input type="text" name="fname" /><br/><br/>
-                 &nbsp;<input type="file" name="xuanze"><br/><br/>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;视频简介 <textarea rows="10" cols="30"></textarea><br/><br/>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <input type="submit" value="保存" />
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <button type="button">返回</button>
+                <form>
+                  <table>
+                            <tr>
+                                <td>id:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="" id="id" ></td>
+                            </tr>
+                                          
+                            <tr>
+                                <td>年级:</td>
+                                <td>&nbsp;</td>
+                                <td><select>
+                                      <option value ="volvo">高一</option>
+                                      <option value ="saab">高二</option>
+                                      <option value="opel">高三</option>
+                                    </select>
+                                </td>
+                            </tr>
+                             
+                            <tr>
+                                <td>科目:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="" id="kemuname"></td>
+                            </tr>
+                            <tr>
+                                <td>视频名称:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="" id="name"></td>
+                            </tr>
+                            <tr>
+                                <td>上传者:</td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name=""></td>
+                            </tr>
+                            <tr>
+                                <td>选择文件:</td>
+                                <td>&nbsp;</td>
+                                <td><input type="file" name="xuanze"></td>
+                            </tr>                      
+                            
+                        
+                            <tr>
+                                <td>视频简介:</td>
+                                <td>&nbsp;</td>
+                                <td><textarea rows="10" cols="30"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="提交" id="save"/></td>
+                                <td>&nbsp;</td>
+                                <td><button type="button"id="cancle">返回</button></td>
+                            </tr>
+                  </table>
                 </form>
               </div>
             </div>
-            <div class="row clearfix">
-              <div class="col-md-12 column" id="footer">
-                <div class="page-footer">
-                  <h4>冀200-1012-12</h4>
-                  <h4>河北省石家庄市河北师范大学 </h4>
+            <div class="container" style="background:rgb(0,112,189);margin-top:10px;">
+              <div class="row clearfix">
+                <div class="col-md-12 column">
+                   <p style="text-align:center;padding-top:20px;">地址: 石家庄市裕华区南二环东路20号     石家庄河北师范大学软件学院</p>
+                   <p style="text-align:center;">冀ICP备XXXXXXXX号-X    站长统计</p>
+
                 </div>
               </div>
             </div>
@@ -152,8 +207,28 @@
         </div>
       </div>
 
-<script src="../js/jquery.js"></script>    
-<script src="../js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>    
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $("#save").click(function(){
+    if($("#id").val()==''){
+      alert("ID不能为空");
+    }
+    else if($("#kemuname").val()==''){
+      alert("科目不能为空");
+    }
+    else if($("#name").val()==''){
+      alert("视频名称不能为空");
+    }
+    else if($("#id").val()!='' && $("#kemuname").val()!=''&& $("#name").val()!='' ){
+        alert("成功");
+        window.location.href="video_all.html";
+    }
+  });
+    $("#cancle").click(function(){
+        window.history.go(0);
+});
+</script>
       
   </body>
 </html>
