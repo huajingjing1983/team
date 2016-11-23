@@ -10,7 +10,7 @@
         text-decoration:none;
     }
 	#search{
-		height: 27px;
+		height: 29px;
 	}
 	.dropdown{
 		width:120px;
@@ -30,31 +30,34 @@
   #btn{
     float:right;
   }
+  #pp{
+    font-size: 15px;
+  }
   /* nav ul{ width:1000px; height:30px; margin:0px auto}
 nav ul li{ display:block; float:left; padding:0px 0px; }
 *{
   margin:0 auto;padding:0px;
 }*/
-nav #we{ width:1000px; height:30px; margin:0px auto}
+ nav #we{ width:1200px; height:30px; margin:0px auto;padding-left: 55px;}
 nav #we>li{ display:block; float:left; padding:0px 0px; }
 nav #we>li>ul{float: left; z-index: 999;}
 nav #we>li>ul>li{/*z-index: 999;*/float: left;}
+#nar { padding-right: 30px; }
 </style>
 </head>
 
 <body>
 <div class="container">
     <!--网站顶部-->
-    <div class="row" style="margin-top:10px"> 
-        <div class="col-md-8"><img src="../images/logo.png"/ width="200px" height="50px"></div>
-        <div class="col-md-3" style="margin-top:10px">
-            <input type="text" name="search" value="请输入..." id="search"/>
+    <div class="row" style="margin-top:0.5%"> 
+        <div class="col-xs-2 col-md-8"><img src="../images/logo.png"/ width="30%"></div>
+        <div class="col-xs-6 col-md-3" style="margin-top:2%">
+            <input type="text" name="search" value=""/ id="search">
             <button type="button" class="btn btn-primary btn-sm">搜索</button>
         </div>
-          <div class="col-md-1">
+        <div class="col-xs-4 col-md-1" style="margin-top:1%">
             <img src="../images/user.jpg" width="50%" style="margin-left:10%"/>
-            <p><a href="../personalcenter/peraonal-message.html
-">个人中心</a></p>
+            <p><a href="../personalcenter/peraonal-message.html">个人中心</a></p>
         </div>
     </div>
     <!--导航-->
@@ -62,7 +65,7 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
     <div class="col-md-12 column">
       <nav class="navbar navbar-default" style="background-color:rgb(0,112,189);"> 
          <ul class="nav navbar-nav" id="we">
-             <li style="margin-left:25px" width="100%"height="100%"><a href="#" style="font-size:22px;font-weight:bold;color:white">首页</a></li>
+             <li style="margin-left:25px" width="100%"height="100%"><a href="#" style="font-size:22px;font-weight:bold;color:white" id="nar">首页</a></li>
              <li class="dropdown">
                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">语文</a>
                <ul class="dropdown-menu" style="background-color:#CCC;">
@@ -105,11 +108,11 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
                  <li><a href="gaokaozhenti.html">高考真题</a></li>
               </ul> 
             </li>
-            <li class="dropdown" style="width:150px;">
-               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center;">热点资讯</a>
+           <li class="dropdown" style="width:150px;">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="../News/news.html" style="font-size:22px;font-weight:bold;color:white;text-align:center;">热点资讯</a>
             </li>
-        <li class="dropdown" style="width:150px;">
-               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">关于我们</a>
+            <li class="dropdown" style="width:150px;">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="../About/about.html" style="font-size:22px;font-weight:bold;color:white;text-align:center">关于我们</a>
             </li>
          </ul>
       </nav>
@@ -151,35 +154,45 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12 column">
-      <h2>
+    <div class="col-md-1 column">
+    </div>
+    <div class="col-md-10 column">
+      <h4>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do you want a friend whom you could tell everything to, like your deepest feelings and thoughts? Or are you afraid that your friend would laugh at you, or would not understand what you are going through? Anne Frank wanted the first kind, so she made her diary her best friend. 
-      </h2>
-      <p>
+      </h4>
+      <p id="pp">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安妮最好的朋友      你想不想有一位无话不谈能推心置腹的朋友？或者你会不会担心你的朋友会嘲笑你，会不理解你目前的困境呢？安妮?弗兰克想要的是第一种类型的朋友，所以她把的日记视为自己最好的朋友。
       </p>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12 column">
-      <h2>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anne lived in Amsterdam in the Netherlands during World War II. Her family was Jewish so she had to hide or they would be caught by the German Nazis. She and her family hidden away for two years before they were discovered. During that time the only true friend was her diary. She said, ―I don’t want to set down a series of facts in a diary as most people do, but I want this diary itself to be my friend, and I shall call my friend Kitty.‖ Now read how she felt after being in the hiding place since July 1942. 
-      </h2>
-      <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在第二次世界大战期间，安妮住在荷兰的阿姆斯特丹。她一家人都是犹太人，所以他们不得不躲藏起来，否则就会被德国的纳粹分子抓去。她和她的家人躲藏了25个月之后才被发现。在那段时期，她的日记成了她唯一忠实的朋友。她说：―我不愿像大多数人那样在日记中记流水账。我要把我的日记当作自己的朋友，我把我的这个朋友叫做基蒂。‖现在，来看看安妮自1942年7月起躲进藏身处后的那种心情吧。
-      </p>
+     <div class="col-md-1 column">
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12 column">
-      <h2>
+      <div class="col-md-1 column">
+    </div>
+    <div class="col-md-10 column">
+      <h4>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anne lived in Amsterdam in the Netherlands during World War II. Her family was Jewish so she had to hide or they would be caught by the German Nazis. She and her family hidden away for two years before they were discovered. During that time the only true friend was her diary. She said, ―I don’t want to set down a series of facts in a diary as most people do, but I want this diary itself to be my friend, and I shall call my friend Kitty.‖ Now read how she felt after being in the hiding place since July 1942. 
+      </h4>
+      <p id="pp">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在第二次世界大战期间，安妮住在荷兰的阿姆斯特丹。她一家人都是犹太人，所以他们不得不躲藏起来，否则就会被德国的纳粹分子抓去。她和她的家人躲藏了25个月之后才被发现。在那段时期，她的日记成了她唯一忠实的朋友。她说：―我不愿像大多数人那样在日记中记流水账。我要把我的日记当作自己的朋友，我把我的这个朋友叫做基蒂。‖现在，来看看安妮自1942年7月起躲进藏身处后的那种心情吧。
+      </p>
+    </div>
+     <div class="col-md-1 column">
+    </div>
+  </div>
+  <div class="row">
+   <div class="col-md-1 column">
+    </div>
+    <div class="col-md-10 column">
+      <h4>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thursday 15, June, 1944 Dear kitty, <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I wonder if it’s because I haven’t been able to be outdoors for so long that I’ve grown so crazy about everything to do with nature. I can well remember that there was a time when a deep blue sky, the song of the birds, moonlight and flowers could never have kept me spellbound. That’s changed since I was here. <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For example, when it was so warm, I stayed awake on purpose until half past eleven one evening in order to have a good look at the moon for once by myself. But as the moon gave far too much light, I didn’t dare open a window. Another time some months ago, I happened to be upstairs one evening when the window was open. I didn’t go downstairs until the window had to be shut. The dark, rainy evening, the wind, the thundering clouds held me entirely in their power; it was the first time in a year and a half that I’d seen the night face to face… <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sadly…I am only able to look at nature through dirty curtains hanging before very dusty windows. It’s no pleasure looking through these any longer because nature is one thing that really must be experienced.  <br/>
          Yours,  Anne
-      </h2>
-      <p>
+      </h4>
+      <p id="pp">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1944年6月15日，星期四  亲爱的基蒂： <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我不知道这是不是因为我太久无法出门的缘故，我变得对一切与大自然有关的事物都无比狂热。我记得非常清楚，以前，湛蓝的天空、鸟儿的歌唱、月光和鲜花，从未令我心迷神往过。自从我来到这里之后，这一切都变了。 <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;比如说，有一天晚上天气很暖和，我故意熬到晚上11点半都不睡觉，为的就是能独自好好地看看月亮。但是因为月光太亮了，我都不敢打开窗户。还有一次，就在五个月以前的一个晚上，我碰巧在楼上，窗户是开着的，我一直呆到非关窗不可的时候才下楼去。漆黑的雨夜，刮着大风，电闪雷鸣，乌云滚滚，我完全被这种景象镇住了。这是我一年半以来第一次亲眼目睹的夜晚……  <br/>
@@ -187,8 +200,11 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
          你的安妮
       </p>
     </div>
-    <button type="button" class="btn btn-primary" id="btn">下载文档</button>
+     <div class="col-md-1 column">
+    </div>
+    
   </div>
+   <button type="button" class="btn btn-primary" id="btn">下载文档</button>
   <div class="row">
     <div class="col-md-12 column">
       <h1>
@@ -247,8 +263,8 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
 <div class="container" style="background:rgb(0,112,189);margin-top:10px;">
   <div class="row clearfix">
     <div class="col-md-12 column">
-       <p style="text-align:center;padding-top:30px;">地址: 石家庄市裕华区南二环东路20号    ® 石家庄河北师范大学软件学院</p>
-            <br/><p style="text-align:center;">冀ICP备XXXXXXXX号-X    站长统计</p>
+       <p style="text-align:center;padding-top:20px;">地址: 石家庄市裕华区南二环东路20号     石家庄河北师范大学软件学院</p>
+            <p style="text-align:center;">冀ICP备XXXXXXXX号-X    站长统计</p>
     </div>
   </div>
 </div>
