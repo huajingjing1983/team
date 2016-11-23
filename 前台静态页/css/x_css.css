@@ -1,8 +1,11 @@
  a:hover{
-        text-decoration:none;
-    }
+    text-decoration:none;
+  }
+  li{
+    list-style:none;
+  }
   #search{
-    height: 27px;
+    height: 29px;
   }
   .dropdown{
     width:120px;
@@ -10,11 +13,11 @@
   .dropdown-menu{
     min-width:120px;
   }
-  
-   nav #we{ width:1000px; height:30px; margin:0 auto}
-nav #we>li{ display:block; float:left; padding:0 0; }
-nav #we>li>ul{float: left; z-index: 999;}
-nav #we>li>ul>li{/*z-index: 999;*/float: left;}
+  nav #we{ width:1200px; height:30px; margin:0px auto;padding-left: 55px;}
+  nav #we>li{ display:block; float:left; padding:0px 0px; }
+  nav #we>li>ul{float: left; z-index: 999;}
+  nav #we>li>ul>li{/*z-index: 999;*/float: left;}
+  #nar { padding-right: 30px; }
  
   #note_id p{
     font-size:15px;
