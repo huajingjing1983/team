@@ -12,12 +12,20 @@
   li{
     list-style:none;
   }
-	.dropdown{
-		width:120px;
-	}
-	.dropdown-menu{
-		min-width:120px;
-	}
+  #search{
+    height: 29px;
+  }
+  .dropdown{
+    width:120px;
+  }
+  .dropdown-menu{
+    min-width:120px;
+  }
+  nav #we{ width:1200px; height:30px; margin:0px auto;padding-left: 55px;}
+  nav #we>li{ display:block; float:left; padding:0px 0px; }
+  nav #we>li>ul{float: left; z-index: 999;}
+  nav #we>li>ul>li{/*z-index: 999;*/float: left;}
+  #nar { padding-right: 30px; }
 </style>
 </head>
 
@@ -27,12 +35,12 @@
     <div class="row" style="margin-top:0.5%"> 
         <div class="col-xs-2 col-md-8"><img src="../images/logo.png"/ width="30%"></div>
         <div class="col-xs-6 col-md-3" style="margin-top:2%">
-            <input type="text" name="search" value="请输入..."/>
+            <input type="text" name="search" value=""/ id="search">
             <button type="button" class="btn btn-primary btn-sm">搜索</button>
         </div>
-        <div class="col-xs-4 col-md-1">
+        <div class="col-xs-4 col-md-1" style="margin-top:1%">
             <img src="../images/user.jpg" width="50%" style="margin-left:10%"/>
-            <p><a href="#">个人中心</a></p>
+            <p><a href="../personalcenter/peraonal-message.html">个人中心</a></p>
         </div>
     </div>
     <!--网站顶部结束-->
@@ -40,8 +48,8 @@
     <div class="row">
     <div class="col-md-12 column">
       <nav class="navbar navbar-default" style="background-color:rgb(0,112,189);"> 
-         <ul class="nav navbar-nav">
-             <li style="margin-left:50px"><a href="../index.html" style="font-size:22px;font-weight:bold;color:white">首页</a></li>
+         <ul class="nav navbar-nav" id="we">
+             <li style="margin-left:25px"><a href="../index.html" style="font-size:22px;font-weight:bold;color:white" id="nar">首页</a></li>
              <li class="dropdown">
                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">语文</a>
                <ul class="dropdown-menu" style="background-color:#CCC;">
@@ -100,13 +108,13 @@
     <div class="col-md-12 column">
       <ul class="breadcrumb">
         <li>
-          <a rel="nofollow" href="#">首页</a> <span class="divider">/</span>
+          <a rel="nofollow" href="../index.html">首页</a> <span class="divider">/</span>
         </li>
         <li>
-          <a rel="nofollow" href="#">数学</a> <span class="divider">/</span>
+          <a rel="nofollow" href="../math/mathone.html">数学</a> <span class="divider">/</span>
         </li>
         <li>
-          <a rel="nofollow" href="#">高一数学</a> <span class="divider">/</span>
+          <a rel="nofollow" href="../math/mathone.html">高一数学</a> <span class="divider">/</span>
         </li>
         <li class="active">
           博学微课堂
@@ -119,18 +127,12 @@
     <div class="row">
       <div class="col-md-12">
         <h3>视频：北大附中名师高考真题解析</h3>
-        <video src="video.mp4" controls="controls" autoplay="true" loop="true" width="1000" height="500" type="video/mp4"></video>
-
-        <video width="320" height="300" controls="controls">
-  <source src="1.ogg" type="video/ogg">
-  <source src="1.mp4" type="video/mp4">
-您的浏览器不支持Video
-</video>
-
-
+        <hr/>
+        <video src="video.MP4" controls="controls" loop="true" width="1000" height="500"></video>
         <div class="row" style="margin-top:1%">
           <div class="col-md-7">
             <img src="../images/art.png" width="10%" />&nbsp;&nbsp;<a>2330次播放</a>
+            <a href="buy/pay.html"><button type="button" class="btn btn-primary" style="margin-left:1%">下载</button></a>
           </div>
           <div class="col-md-5" style="margin-top:2%">
             <p>分享到：<a href="#"><img src="../images/qq.jpg" width="6%"/></a>&nbsp;<a href="#"><img src="../images/weibo.png" width="4%"/></a>&nbsp;<a href="#"><img src="../images/weixin.png" width="8%"/></a></p>
@@ -222,18 +224,16 @@
       </div>
     </div>
     <!--内容部分结束-->
-    <!--底部footer-->
-    <div class="row">
-      <div class="col-md-12" style="margin-top:5%; background-color:rgb(0,112,189);">
-        <div class="col-md-7 col-md-offset-5" style="margin-top:2%">
-          <p>冀200-1012-12</p>
+    <!--页脚-->
+    <div class="container" style="background:rgb(0,112,189);margin-top:10px;">
+      <div class="row clearfix">
+        <div class="col-md-12 column">
+          <p style="text-align:center;padding-top:20px;">地址: 石家庄市裕华区南二环东路20号     石家庄河北师范大学软件学院</p>
+          <p style="text-align:center;">冀ICP备XXXXXXXX号-X    站长统计</p>
         </div>
-        <div style="margin-left:440px">
-         <p>河北省石家庄市河北师范大学</p>
-        </div>  
       </div>
     </div>
-	  <!--底部footer结束-->
+    <!--页脚结束-->
 </div>
 <script src="../js/jquery.js"></script>
 <script src="../js/bootstrap.min.js"></script>
