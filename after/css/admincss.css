@@ -16,15 +16,17 @@
 			margin-left:65%;
 		}
 		#admin-footer{
-			background-color:blue;
 
+			background:rgb(0,112,189);
+			margin-top:10px;
 		}
 		#admin-footer #admin-p{
 			padding-top:2%;
 			
 		}
 		nav #bs-example-navbar-collapse-1{
-			background-color:blue;
+			background:rgb(0,112,189);
+
 
 		}
 		nav #bs-example-navbar-collapse-1 ul li a{
