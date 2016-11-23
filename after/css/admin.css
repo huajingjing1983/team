@@ -9,8 +9,8 @@
 			margin-top:16%;
 		}
 		#denglu{
-			padding-top:10%;
-			padding-left:5%; 
+			padding-top:11%;
+			padding-left:7%; 
 			padding-bottom:30%;
 		}
 		#userpwd{
@@ -26,10 +26,6 @@
 		#userpwd #picture{
 			color:blue;
 		}
-		a{
-      color:black;
-    }
-        a:hover{
-      color:black;
-      text-decoration:none;
-    }
+		#admin_btton{
+			color:black;
+		}
