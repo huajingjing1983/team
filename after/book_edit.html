@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
   <head>
-    <title>资料编辑</title>
+    <title>编辑资料</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">	
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">	
@@ -10,11 +10,8 @@
         margin-left:18%;
       }
      
-      #footer{
-        background-color: blue;
-      }
       #header{
-        background-color: blue;
+        background:rgb(0,112,189)
       }
        #list{
         background-color: gray;
@@ -30,6 +27,9 @@
        h4{
         text-align: center;
       }
+      #addbooks{
+        color: blue;
+      }
       form span{
         color: red;
       }
@@ -41,6 +41,22 @@
         
         color: blue;
       }
+      form table{
+        margin-left:10%;
+        border-collapse:   separate;   
+        border-spacing:   10px; 
+      }
+
+      form table tr td{
+        font-size:1.5rem; 
+      }
+      form table tr td span{
+        color:red;
+      }
+      form table tr td button{
+        margin-left:20%;
+      }
+
     </style>
   </head>
   <body>
@@ -99,7 +115,7 @@
                   <div class="list-group-item">
                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="book_all.html">所有资料</a>
                   </div>
-                  <div class="list-group-item">
+                  <div class="list-group-item" >
                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="book_add.html">添加资料</a>
                   </div>
                   <a href="#" class="list-group-item active" ><span class="glyphicon  glyphicon-globe"></span> 新闻管理</a>
@@ -120,33 +136,61 @@
                      <a href="book_all.html">资料管理</a>
                   </li>
                   <li class="active">
-                    资料编辑
+                    编辑资料
                   </li>
                 </ul>
                 <div class="row" id="admin-admin"><h2>编辑资料</h2></div><br/>
-                <form action="form_action.asp" method="get">
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 科目<span>*&nbsp;</span> <input type="text" name="fname" /><br/><br/>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 类别&nbsp;&nbsp; <select>
+                <form>
+                <table>
+                            <tr>
+                                <td>科目:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="" id="kemuname" ></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>类别:</td>
+                                <td>&nbsp;</td>
+                                <td><select
                                       <option value ="volvo">课上教材</option>
                                       <option value ="saab">辅导资料</option>
                                       <option value="opel">试题</option>
-                                    </select><br/><br/>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 书名<span>*&nbsp;</span> <input type="text" name="bname" /><br/><br/>
-                 &nbsp;<input type="file" name="xuanze"><br/><br/>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;描述内容&nbsp;&nbsp; <textarea rows="10" cols="30"></textarea><br/><br/>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <input type="submit" value="提交" />
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <button type="button">返回</button>
-                </form>
+                                    </select>
+                                </td>
+                            </tr>
+                             
+                            <tr>
+                                <td>书名:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="" id="bookname"></td>
+                            </tr>
+                                                     
+                            <tr>
+                                <td>选择文件:</td>
+                                <td>&nbsp;</td>
+                                <td><input type="file" name="xuanze"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>描述内容:<span>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><textarea rows="10" cols="30"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="提交" id="save"/></td>
+                                <td>&nbsp;</td>
+                                <td><button type="button"id="cancle">返回</button></td>
+                            </tr>
+                        </table>
+                      </form>
               </div>
             </div>
-            <div class="row clearfix">
-              <div class="col-md-12 column" id="footer">
-                <div class="page-footer">
-                  <h4>冀200-1012-12</h4>
-                  <h4>河北省石家庄市河北师范大学 </h4>
+            <div class="container" style="background:rgb(0,112,189);margin-top:10px;">
+              <div class="row clearfix">
+                <div class="col-md-12 column">
+                   <p style="text-align:center;padding-top:20px;">地址: 石家庄市裕华区南二环东路20号     石家庄河北师范大学软件学院</p>
+                   <p style="text-align:center;">冀ICP备XXXXXXXX号-X    站长统计</p>
+
                 </div>
               </div>
             </div>
@@ -154,8 +198,25 @@
         </div>
       </div>
 
-<script src="../js/jquery.js"></script>    
-<script src="../js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>    
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $("#save").click(function(){
+    if($("#kemuname").val()==''){
+      alert("科目不能为空");
+    }
+    else if($("#bookname").val()==''){
+      alert("书名不能为空");
+    }
+    else if($("#kemuname").val()!='' && $("#bookname").val()!='' ){
+        alert("成功");
+        window.location.href="book_all.html";
+    }
+  });
+     $("#cancle").click(function(){
+     window.history.go(0);
+});
+</script>
       
   </body>
 </html>
