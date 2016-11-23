@@ -23,7 +23,7 @@ $("#save").click(function(){
     }
     else if($("#admin-username").val()!='' && $("#admin-password").val()!='' && $("#admin-password").val()==$("#admin-repassword").val() && $("#admin-email").val()!=''){
         alert("成功");
-        window.location.href="admin_all.html";
+        window.location.href="teacher_all.html";
     }
 });
 $("#cancle").click(function(){
