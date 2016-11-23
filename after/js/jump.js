@@ -17,6 +17,7 @@ $("#admin_btton").click(function(){
 		else if($("#yanzhengma").val()!='' && $("#yanzhengma").val()!='niha'){
 				alert("验证码错误");
 		}
-		
-		
+	else{
+			alert("请重新输入信息");
+		}
 	});
