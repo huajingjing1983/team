@@ -1,0 +1,23 @@
+ a:hover{
+        text-decoration:none;
+    }
+  #search{
+    height: 27px;
+  }
+  .dropdown{
+    width:120px;
+  }
+  .dropdown-menu{
+    min-width:120px;
+  }
+  
+   nav #we{ width:1000px; height:30px; margin:0 auto}
+nav #we>li{ display:block; float:left; padding:0 0; }
+nav #we>li>ul{float: left; z-index: 999;}
+nav #we>li>ul>li{/*z-index: 999;*/float: left;}
+ 
+  #note_id p{
+    font-size:15px;
+    text-indent:2em;
+    font-family:'微软雅黑';
+  } 
