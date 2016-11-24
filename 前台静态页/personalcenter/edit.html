@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>修改个人信息</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	  <link rel="stylesheet" href="../css/index.css">
+    <style type="text/css">
+    a:hover{
+        text-decoration:none;
+    }
+  .dropdown{
+    width:120px;
+  }
+  .dropdown-menu{
+    min-width:120px;
+  }
+  #hrr{
+    width:200px;
+    border:1px solid black;
+    margin-left: 5px;
+  }
+  #wlp{
+    color:black;
+    padding-top: 5px;
+  }
+  td{
+    height:35px;
+
+  }
+  .pagination{
+    float: right;
+  }
+  #search{
+    height: 29px;
+  }
+  nav #we{ 
+    width:1200px; height:30px; margin:0px auto;padding-left: 55px;
+  }
+  #nar { 
+    padding-right: 30px; }
+</style>
+  </head>
+  <body > 
+      <div class="container">
+  <div class="row" style="margin-top:0.5%"> 
+        <div class="col-xs-2 col-md-8"><img src="../images/logo.jpg"/ width="30%"></div>
+        <div class="col-xs-6 col-md-3" style="margin-top:2%">
+            <input type="text" name="search" value=""/ id="search">
+            <button type="button" class="btn btn-primary btn-sm">搜索</button>
+        </div>
+        <div class="col-xs-4 col-md-1" style="margin-top:1%">
+            <img src="../images/personal.jpg" width="50%" style="margin-left:10%"/>
+            <p><a href="../personalcenter/peraonal-message.html">个人中心</a></p>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="row">
+    <div class="row">
+    <div class="col-md-12 column">
+      <nav class="navbar navbar-default" style="background-color:rgb(0,112,189);"> 
+         <ul class="nav navbar-nav" id="we">
+             <li style="margin-left:25px"><a href="index.html" style="font-size:22px;font-weight:bold;color:white" id="nar">首页</a></li>
+             <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">语文</a>
+               <ul class="dropdown-menu" style="background-color:#CCC;">
+                 <li><a href="../chinese/chineseone.html">高一语文</a></li>
+                 <li><a href="../inese/chinesetwo.html">高二语文</a></li>
+                 <li><a href="../hinese/chinesethree.html">高考专题</a></li>
+              </ul> 
+            </li>
+            <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">数学</a>
+               <ul class="dropdown-menu" style="background-color:#CCC;">
+                 <li><a href="../math/mathone.html">高一数学</a></li>
+                 <li><a href="../math/mathtwo.html">高二数学</a></li>
+                 <li><a href="../math/maththree.html">高考专题</a></li>
+              </ul> 
+            </li>
+            <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">英语</a>
+               <ul class="dropdown-menu" style="background-color:#CCC;">
+                 <li><a href="../english/englishone.html">高一英语</a></li>
+                 <li><a href="../english/englishtwo.html">高二英语</a></li>
+                 <li><a href="../english/englishthree.html">高考专题</a></li>
+              </ul> 
+            </li>
+             <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">文综</a>
+               <ul class="dropdown-menu" style="background-color:#CCC;">
+                 <li><a href="../wenzong/jiaocaitongbu.html">教材同步</a></li>
+                 <li><a href="../wenzong/gaokaomoni.html">高考模拟</a></li>
+                 <li><a href="../wenzong/beikaocelue.html">备考策略</a></li>
+                 <li><a href="../wenzong/gaokaozhenti.html">高考真题</a></li>
+              </ul> 
+            </li>
+            <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">理综</a>
+               <ul class="dropdown-menu" style="background-color:#CCC;">
+                 <li><a href="../lizong/jiaocaitongbu.html">教材同步</a></li>
+                 <li><a href="../lizong/gaokaomoni.html">高考模拟</a></li>
+                 <li><a href="../lizong/beikaocelue.html">备考策略</a></li>
+                 <li><a href="../lizong/gaokaozhenti.html">高考真题</a></li>
+              </ul> 
+            </li>
+            <li class="dropdown" style="width:150px">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="../News/news.html" style="font-size:22px;font-weight:bold;color:white;text-align:center;">热点资讯</a>
+            </li>
+            <li class="dropdown" style="width:150px">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="../About/about.html" style="font-size:22px;font-weight:bold;color:white;text-align:center;">关于我们</a>
+            </li>
+         </ul>
+      </nav>
+    </div>
+    </div></div>
+  <div class="row clearfix">
+    <div class="col-md-1 column">
+    </div>
+    <div class="col-md-3 column">
+        <ul id="personal-center" class="list-unstyled" >
+
+          <li><a href="personal-message.html" class="glyphicon glyphicon-user">&nbsp;个人信息</a></li>
+           <li><a href="money.html" class="glyphicon glyphicon-heart-empty">&nbsp;我的钱包</a></li>
+           <li><a href="order.html" class="glyphicon glyphicon-th">&nbsp;我的订单</a></li>
+           <li><a href="readhistory.html" class="glyphicon glyphicon-folder-close">&nbsp;阅读历史</a></li>
+           <li><a href="downhistory.html" class="glyphicon glyphicon-arrow-down">&nbsp;我的下载</a></li>
+           
+           <li><a href="upload.html" class="glyphicon glyphicon-open">&nbsp;上传视频</a></li>
+           <li><a href="uploadhistory.html" class="glyphicon glyphicon-arrow-up">&nbsp;上传历史</a></li>
+           
+       </ul>
+    </div>
+    <div class="col-md-7 column">
+      <div id="page">
+        <br/>
+          <ul class="breadcrumb">
+        <li>
+           <a href="../index.html">主页</a>
+        </li>
+        <li>
+           <a href="personal-message.html">个人中心</a>
+        </li>
+        <li>
+           <a href="personal-message.html">个人信息</a>
+        </li>
+        <li class="active">
+          信息修改
+        </li>
+      </ul>
+
+        </div>
+      <div class="row clearfix">
+        <div class="col-md-4 column">
+        </div>
+        <div class="col-md-4 column" >
+            <img src="../images/teacher-1.jpg" class="img-circle" alt="..." width="50%">
+        </div>  
+        <div class="col-md-4 column">
+        </div>
+      </div>
+      <br/><br/>
+      <div class="row clearfix">
+        <div class="col-md-2 column">
+        </div>
+        <div class="col-md-7 column" id="upload">
+             <form>
+              用户名：
+            &nbsp;&nbsp;
+              <input type="text" value=""><br/><br/>
+              密码：
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text"><br/><br/>
+              年龄：
+              
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text"><br/><br/>
+              邮箱：
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text"><br/><br/>
+              
+              
+              手机：
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text"><br/><br/>
+              个性签名：
+              <input type="textarea"><br/><br/>
+              <a class="btn btn-primary" href="personal-message.html" role="button">保存</a>
+              <a class="btn btn-default" href="personal-message.html" role="button">返回</a>
+
+          </form>
+           
+        </div>
+        <div class="col-md-3 column">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1 column">
+    </div>
+  </div>
+  <div class="row clearfix">
+   <div class="col-md-12 column" id="footer" style="background-color:rgb(0,112,189);">
+        <h3 id="footer-1">冀200-1012-12</h3>
+            <h4 id="footer-1">河北石家庄市河北师范大学</h4>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="../js/jquery.js"></script>    
+    <script src="../js/bootstrap.min.js"></script>
+      
+  </body>
+</html>
