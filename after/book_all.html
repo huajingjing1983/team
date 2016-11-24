@@ -5,40 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">	
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">	
-    <style type="text/css">
-      #logo{
-        margin-left:18%;
-      }
-      h4{
-        text-align: center;
-      }
-      #header{
-        background:rgb(0,112,189)
-      }
-       #list{
-        background-color: gray;
-        color: white;
-      }
-      
-      #admin-list .active{
-        background-color: gray;
-      }
-      #bs-example-navbar-collapse-1 li a{
-        color: white;
-      }
-      #allbooks{
-        color: blue;
-      }
-      .list-group-item a{
-        
-        color: black;
-        text-decoration: none;
-      }.list-group-item a:hover{
-        
-        color: blue;
-      }
-
-    </style>
+    <link rel="stylesheet" href="css/book_all.css">
   </head>
   <body>
       <div class="container">
@@ -120,7 +87,7 @@
                     所有资料
                   </li>
                 </ul>
-                <div class="row"> 
+                <div class="row" id="book_top"> 
                 年级 
                 <select>  
                   <option value ="1"></option>  
@@ -149,11 +116,11 @@
                 </form>
                 </div>
                 
-                <div class="row">
+                <div class="row" id="book_add">
                    <button type="button" class="btn btn-default"><span class="glyphicon  glyphicon-plus"></span><a href="book_add.html" style="color:black;">添加资料</a></button>
                    <button type="button" class="btn btn-default"><span class="glyphicon  glyphicon-remove"></span><a href="" style="color:black;">批量删除</a></button>             
                 </div>
-                <table class="table">
+                <table class="table" id="book_table">
                   <thead>
                     <tr>
                       <th>
