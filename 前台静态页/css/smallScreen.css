@@ -1,0 +1,44 @@
+a:hover{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+/*顶部*/
+#search{
+	width:100px;
+	height: 29px;
+}
+#perimg{
+	width:20%;
+	margin-left:14%;
+}
+#logoimg{
+	width:35%;
+	margin-top: 1%;
+}
+/*顶部*/
+/*首页*/
+
+/*首页完*/
+/*语*/
+.boimg{
+	width:90%;
+}
+.beiimg{
+	width:100%;
+}
+/*语*/
+/*导航栏*/
+nav ul{
+      font-size:22px;
+      
+     
+   }
+  
+    #example-navbar-collapse ul li{
+      margin-left:40px;
+   }
+    #example-navbar-collapse ul li a:hover{
+      background-color:gray;
+   }
