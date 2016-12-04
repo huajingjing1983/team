@@ -1,0 +1,240 @@
+[ 2016-11-29T15:46:30+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:46:33+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:50:46+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:50:47+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:04+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:04+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:04+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:05+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:05+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:05+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:05+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:24+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:26+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:26+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:27+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:51:27+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:44+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001222s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:44+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:44+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:44+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:45+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:45+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:45+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:45+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:45+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:45+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:45+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:46+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:46+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:46+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:46+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:46+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:46+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:46+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:47+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:52+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:52+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:53+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:53+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+ERR: 无法加载模块:News
+
+[ 2016-11-29T15:53:53+08:00 ] 127.0.0.1 /BOXUEYUAN/index.php/News/all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+ERR: 无法加载模块:News
+

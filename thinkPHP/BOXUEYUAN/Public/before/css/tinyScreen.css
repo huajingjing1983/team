@@ -1,0 +1,51 @@
+a:hover{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+  
+/*顶部*/
+#search{
+	height: 29px;
+}
+#perimg{
+	width:20%;
+	margin-left:7%;
+}
+#logoimg{
+	margin-top: 1%;
+	width:30%;
+}
+/*顶部完*/
+
+/*首页*/
+
+/*首页完*/
+
+/*语*/
+.bobutton{
+	margin-left:20%;
+}
+/*语完*/
+/*视频页*/
+#video{
+  width:1000px;
+  height:500px;
+}
+/*视频页完*/
+/*导航栏*/
+
+    nav ul{
+      font-size:22px;
+      
+      
+   }
+  
+    #example-navbar-collapse ul li{
+      margin-left:40px;
+   }
+    #example-navbar-collapse ul li a:hover{
+      background-color:gray;
+   }
+

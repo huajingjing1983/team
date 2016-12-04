@@ -1,0 +1,197 @@
+ /*index*/
+
+ a:hover{
+    text-decoration:none;
+  }
+  li{
+    list-style:none;
+  }
+  #search{
+    height: 27px;
+  }
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+ 
+
+ 
+   #more{
+    float:right;
+      
+
+   }
+   #index-title{
+      font-size:24px;
+
+   }
+   ul{
+    list-style:none;
+
+   }
+   #news-1{
+    font-size:23px;
+    color:black;
+   }
+   #news-2{
+    font-size:20px;
+      line-height: 30px;
+   }
+   #news-font{
+    font-size:22px;
+   }
+   a:hover{
+    text-decoration: none;
+
+   }
+    #notice a{
+      color:black;
+   }
+    #policy a{
+      color:black;
+   }
+    #books a{
+      color:black;
+   }
+   #news a{
+      color:black;
+   }
+   #news{
+    margin-top:50px;
+   }
+   span{
+    font-size:16px;
+    float:right;
+   }
+   #message{
+    
+   }
+   #message-1{
+    float:right;
+   }
+   #video-1{
+    float:left;
+    margin:10px;
+   }
+   #teacher a{
+    margin-left:17px;
+    margin-right:17px;
+   }
+   #friend{
+      background-color:gray;
+      text-align: center;
+      height:40px;
+      line-height: 40px;
+   }
+  
+  #friend a{
+      color:black;
+      font-size:20px;
+      
+     
+   }
+   #friend-1{
+    background-color:rgb(0,112,189);
+    text-align: center;
+     height:40px;
+   }
+
+   .video-1 {
+   text-align: center;
+   margin-left:100px;
+   }
+
+  
+  
+   #footer-1{
+      text-align: center;
+      color:black;
+   }
+
+
+
+
+
+
+/*首页焦点图*/
+.cont{
+    width:350px; 
+  height:250px; 
+  overflow:hidden;
+  
+  
+  float:left; 
+  
+  }
+.slider{
+  
+  }
+.slider li{ 
+    list-style:none;
+  display:inline;
+  }
+.slider img{ 
+    width:350px; 
+  height:210px; 
+  display:block;
+  }
+
+
+
+.num{ 
+    position:absolute; 
+  
+  bottom:28px;
+  }
+.num li{
+  float: left;
+  color: #FF7300;
+  text-align: center;
+  line-height: 16px;
+  width: 16px;
+  height: 16px;
+  font-family: Arial;
+  font-size: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 3px 1px;
+  border: 1px solid #FF7300;
+  background-color: #fff;
+}
+.num li.on{
+  color: #fff;
+  line-height: 21px;
+  width: 21px;
+  height: 21px;
+  font-size: 16px;
+  margin: 0 1px;
+  border: 0;
+  background-color: #FF7300;
+  font-weight: bold;
+}
+/*图片新闻的标题*/
+.slider li p{
+  width:260px;
+  height:30px;
+  
+  line-height:30px;
+  vertical-align:middle;
+  padding:5px 10px;
+  font-size:14px;
+  margin-top:2px;
+  }
+
+
+ 
+
+   
