@@ -8,14 +8,13 @@ class TestController extends Controller {
             $this->error("请先登录！",U("Login/login"));//使用U函数
           }
         }
-    public function test_all(){
-     //    $ziliaoModel = M('ziliao');
-    	// $data = $ziliaoModel->select();
-     //    $this->assign('data',$data);
+ 
+
+   public function test_all(){
+    
 
 
-
-
+        if(I("get.search")==''){
         $ziliaoModel = M('test');
         $count = $ziliaoModel->count();
         $pagecount = 3;
@@ -31,6 +30,21 @@ class TestController extends Controller {
        $this->assign('data',$data);
         $this->assign('page',$show);
         $this->display();
+      }else{
+        $goods=M("test");
+        $keyword=$_GET['search'];
+        // var_dump($keyword);exit;
+        $conition['id']=$keyword;
+        $conition['grade']=$keyword;
+        $conition['zname']=$keyword;
+        $conition['zhaiyao']=$keyword;
+        $conition['addtime']=$keyword;
+        $conition['updatetime']=$keyword;
+        $conition['_logic']='OR';
+        $Goods=$goods->where($conition)->select();
+        $this->assign('data',$Goods);
+        $this->display();
+      }
   }
   public function test_add(){
        $this->display();
