@@ -1,45 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
 	<meta charset="UTF-8">
-	<title>后阳登录页面</title>
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	  <link rel="stylesheet" href="css/bootstrap.min.css">	
-	 <link rel="stylesheet" href="css/admin.css">	
+	<title>用户-列表</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admincss.css">	
+  <link rel="stylesheet" href="css/admin_style.css">
+  <style>
+  
+  .container{
+    width:681.5px;
+    height:334px;
+    margin-top:8%;
+
+  }
+  #admin_top{
+     background: -webkit-linear-gradient(left,#0294e7,#0a3869);
+     height:80px;
+     color:white;
+     padding-top:5%;
+     padding-left:55%;
+  }
+  #admin_mid{
+     background:#0b3768;
+     height:250px;
+    color:white;
+     padding-left:20%;
+  }
+  h3{
+  margin-top:5%;
+  color:white;
+}
+h3 small{
+  color:white;
+}
+  #admin_bottom{
+     background: -webkit-linear-gradient(left,#0c3869,#0293e4);
+     height:80px;
+     color:white;
+     padding-left:70%;
+      padding-top:4%;
+  }
+  .col-md-12{
+    margin-top:3%;
+  }
+
+  </style>
+
 </head>
 <body>
-  <div class="container">
-	<div class="row clearfix">
-		
-		<div class="col-md-3 column" id="denglu">
-			<img  src="images/登录.jpg" width="100%"/>
-		</div>
-		<div class="col-md-9 column">
-			<p>
-				 博学苑网站后台管理
-			</p>
-		</div>
-		
-	</div>
-	<div class="row clearfix col-md-12" id="userpwd">
-		
-		<div class="col-md-3 column">账号<input type="text" name="username" id="username">
-		</div>
-		
-		<div class="col-md-3 column">密码<input type="password" name="password" id="password">
-		</div>
-		
-		<div class="col-md-4 column" id="yanzheng">验证码<input type="text" name="yanzhengma" id="yanzhengma"><input type="text" name="picture" id="picture" value="niha">
-		</div>
-		
-		
-		<div class="col-md-2 column"><button type="button" class="btn btn-default btn-info btn-sm" id="admin_btton">登录</button>
-		</div>
-	</div>
-</div>
+<div class="container">
+<div class="row" id="admin_top">With me on the shoulder, to help you grow</div>
+<div class="row" id="admin_mid">
+  <div class="col-md-12 column">
+      <h3 class="text-left">
+       后台管理平台&nbsp;&nbsp;<small>博学苑网站</small>
+      </h3> 
+     
+       </div>
 
+     <div class="col-md-12 column">
+        <div class="col-md-2 column" style="color:white">账号
+        </div>
+        <div class="col-md-2 column"><input type="text" name="username" id="username" value="">
+        </div> 
+    </div>
+     <div class="col-md-12 column">
+        <div class="col-md-2 column" style="color:white">密码
+        </div>
+        <div class="col-md-2 column"><input type="text" name="password" id="password" value="">
+        </div> 
+    </div>
+     <div class="col-md-12 column" style="margin-left:18%">
+        <div class="col-md-3 column"><button type="button" class="btn btn-default btn-info" id="admin_btton">登录</button>
+        </div> 
+    </div>
+
+</div>
+<div class="row" id="admin_bottom">We are your best choice</div>
+</div>
 </body>
 <script src="js/jquery.js"></script>    
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jump.js"></script>	
+<script src="js/bootstrap.min.js"></script>	
+<script src="js/jump.js"> </script>
 </html>
