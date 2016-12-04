@@ -5,29 +5,20 @@
 <title>备考策略</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-width:993px)" href="../css/tinyScreen.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:993px)" href="../css/smallScreen.css">
 <style type="text/css">
-    a:hover{
-        text-decoration:none;
-    }
-	#search{
-		height: 29px;
-	}
-	.dropdown{
-		width:120px;
-	}
-	.dropdown-menu{
-		min-width:120px;
-	}
+   
+	
   #hrr{
     width:200px;
     border:1px solid black;
     margin-left: 5px;
   }
-   nav #we{ width:1200px; height:30px; margin:0px auto;padding-left: 55px;}
-nav #we>li{ display:block; float:left; padding:0px 0px; }
-nav #we>li>ul{float: left; z-index: 999;}
-nav #we>li>ul>li{/*z-index: 999;*/float: left;}
-#nar { padding-right: 30px; }
+   
+
+ 
+
 </style>
 </head>
 
@@ -35,72 +26,53 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
 <div class="container">
     <!--网站顶部-->
     <div class="row" style="margin-top:0.5%"> 
-        <div class="col-xs-2 col-md-8"><img src="../images/logo.png"/ width="30%"></div>
-        <div class="col-xs-6 col-md-3" style="margin-top:2%">
-            <input type="text" name="search" value=""/ id="search">
-            <button type="button" class="btn btn-primary btn-sm">搜索</button>
+        <div class="col-xs-6 col-sm-6 col-md-6"><img src="../images/logo.png" id="logoimg"/></div>
+        <div class="col-xs-4 col-sm-4 col-md-4" style="margin-top:2%">
+            <form class="form-search">
+              <input class="input-medium search-query" type="text" id="search"/> 
+              <button type="submit" class="btn btn-primary btn-sm">查找</button>
+            </form>
         </div>
-        <div class="col-xs-4 col-md-1" style="margin-top:1%">
-            <img src="../images/user.jpg" width="50%" style="margin-left:10%"/>
+        <div class="col-xs-2 col-sm-2 col-md-2" style="margin-top:1%">
+            <img src="../images/user.jpg" id="perimg"/>
             <p><a href="../personalcenter/peraonal-message.html">个人中心</a></p>
         </div>
     </div>
     <!--导航-->
    <div class="row">
     <div class="col-md-12 column">
-      <nav class="navbar navbar-default" style="background-color:rgb(0,112,189);"> 
-         <ul class="nav navbar-nav" id="we">
-             <li style="margin-left:25px" width="100%"height="100%"><a href="../index.html" style="font-size:22px;font-weight:bold;color:white" id="nar">首页</a></li>
-             <li class="dropdown">
-               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">语文</a>
-               <ul class="dropdown-menu" style="background-color:#CCC;">
-                 <li><a href="../chinese/chineseone.html">高一语文</a></li>
-                 <li><a href="../chinese/chinesetwo.html">高二语文</a></li>
-                 <li><a href="../chinese/chinesethree.html">高考专题</a></li>
-              </ul> 
-            </li>
-            <li class="dropdown">
-               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">数学</a>
-               <ul class="dropdown-menu" style="background-color:#CCC;">
-                 <li><a href="../math/mathone.html">高一数学</a></li>
-                 <li><a href="../math/mathone.html">高二数学</a></li>
-                 <li><a href="../math/mathone.html">高考专题</a></li>
-              </ul> 
-            </li>
-            <li class="dropdown">
-               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">英语</a>
-               <ul class="dropdown-menu" style="background-color:#CCC;">
-                 <li><a href="../english/englishone.html">高一英语</a></li>
-                 <li><a href="../english/englishtwo.html">高二英语</a></li>
-                 <li><a href="../english/englishthree.html">高考专题</a></li>
-              </ul> 
-            </li>
-             <li class="dropdown">
-               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">文综</a>
-               <ul class="dropdown-menu" style="background-color:#CCC;">
-                 <li><a href="../wenzong/jiaocaitongbu.html">教材同步</a></li>
-                 <li><a href="../wenzong/gaokaomoni.html">高考模拟</a></li>
-                 <li><a href="../wenzong/beikaocelue.html">备考策略</a></li>
-                 <li><a href="../wenzong/gaokaozhenti.html">高考真题</a></li>
-              </ul> 
-            </li>
-            <li class="dropdown">
-               <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">理综</a>
-               <ul class="dropdown-menu" style="background-color:#CCC;">
-                  <li><a href="jiaocaitongbu.html">教材同步</a></li>
-                 <li><a href="gaokaomoni.html">高考模拟</a></li>
-                 <li><a href="beikaocelue.html">备考策略</a></li>
-                 <li><a href="gaokaozhenti.html">高考真题</a></li>
-              </ul> 
-            </li>
-            <li class="dropdown" style="width:150px;">
-               <a  href="../News/news.html" style="font-size:22px;font-weight:bold;color:white;text-align:center;">热点资讯</a>
-            </li>
-            <li class="dropdown" style="width:150px;">
-               <a  href="../About/about.html" style="font-size:22px;font-weight:bold;color:white;text-align:center">关于我们</a>
-            </li>
-         </ul>
+     <nav class="navbar navbar-default" role="navigation" >
+    <div class="container-fluid" style="background-color:rgb(0,112,189);width:100%" >
+    <div class="navbar-header" >
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+           <!-- <span class="caret">导航栏</span>
+           <a class="btn btn-primary"  role="button">保存</a>-->
+           
+           <span class="caret"></span> 导航栏 
+
+ 
+           
+        </button>
+       
+    </div>
+
+    <div class="collapse navbar-collapse" id="example-navbar-collapse" >
+        <ul class="nav navbar-nav" id="daohang" >
+            <li ><a href="../index.html" style="color:white">首页</a></li>
+            <li ><a href="../chinese/chineseone.html" style="color:white">语文</a></li>
+            <li ><a href="../math/mathone.html" style="color:white">数学</a></li>
+            <li ><a href="../english/englishone.html" style="color:white">英语</a></li>
+            <li ><a href="../wenzong/beikaocelue.html" style="color:white">文综</a></li>
+            <li ><a href="beikaocelue.html" style="color:white">理综</a></li>
+            <li><a href="../News/news.html" style="color:white">热点资讯</a></li>
+            <li><a href="../About/about.html" style="color:white">关于我们</a></li>
+        </ul>
+
+    </div>
+    </div>
       </nav>
+
     </div>
     </div>
     <!--banner图-->
@@ -152,7 +124,7 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
   <!--内容-->
   <div class="row clearfix">
     <!--导航列表-->
-    <div class="col-md-3 column">
+    <div class="col-xs-3 col-sm-3 col-md-3 column">
       <div class="list-group">
         <div class="list-group-item">
          <h3 style="text-align:center;family-weight:bold;">导航列表</h3>
@@ -172,7 +144,7 @@ nav #we>li>ul>li{/*z-index: 999;*/float: left;}
       </div>
     </div>
     <!--教材-->
-    <div class="col-md-9 column">
+    <div class="col-xs-9 col-sm-9 col-md-9 column">
       <div class="row">
          <h3>临近高考，如何科学备考？</h3>
          <hr id="hrr"/></br>
