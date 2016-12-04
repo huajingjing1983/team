@@ -1,0 +1,75 @@
+﻿
+              <div class="col-md-10 column">
+                <ul class="breadcrumb">
+                  <li>
+                     <a href="admin_index.html"><span class="glyphicon  glyphicon-home"></span> 首页</a>
+                  </li>
+                  <li>
+                     <a href="__MODULE__/Data/book_all">资料管理</a>
+                  </li>
+                  <li class="active">
+                    编辑资料
+                  </li>
+                </ul>
+                <div class="row" id="admin-admin"><h2>编辑资料</h2></div><br/>
+                <form action="__MODULE__/Data/doEdit" method="post"  enctype="multipart/form-data">
+               <table>
+                            <tr>
+                                <td>科目:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text"  id="kemuname" name="subject" value="{$data.subject}"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>类别:</td>
+                                <td>&nbsp;</td>
+                                <td>
+                                  教材                                   
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>年级:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text"  id="grade" name="grade" value="{$data.grade}"></td>
+                            </tr>
+                            <tr>
+                                <td>书名:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" id="bookname" name="dataname" value="{$data.dataname}"></td>
+                            </tr>
+                                                     
+                            <tr>
+                                <td>选择文件:</td>
+                                <td>&nbsp;</td>
+                                <td><img src="__PUBLIC__/{$data.thumb}" style="width:150px;height:105px;"/><input name="thumb" id="" type="file"></td>
+                            </tr>
+                            <tr>
+                                <td>摘要:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><textarea rows="5" cols="30" name="zhaiyao">{$data.zhaiyao}</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>教材内容:<span>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><textarea rows="10" cols="30" name="content" >{$data.content}</textarea></td>
+                            </tr>
+                            <tr>
+                                 <input type="hidden" value="{$data.zid}" name="id" />
+                                <td><input type="submit" value="提交" name="submit"/></td>
+                                <td>&nbsp;</td>
+                                <td><button type="button" id="cancle" onclick="history.back(-1)"
+>返回</button></td>
+                            </tr>
+               </table>
+                </form>
+              </div>
+            </div>
+            <div class="container" style="background:rgb(0,112,189);margin-top:10px;">
+             
+          </div>
+        </div>
+      </div>
+
+
+
+ 
