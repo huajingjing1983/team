@@ -1,0 +1,55 @@
+
+              <div class="col-md-10 column">
+                <ul class="breadcrumb">
+                  <li><a href="__MODULE__/Index/index">首页</a></li>
+                  <li><a href="__MODULE__/Book/book_all">资料管理</a></li>
+                  <li class="active">编辑资料</li>
+                </ul>
+                
+              
+                   <div class="row" id="admin-admin"><h2>编辑资料</h2></div>
+                <div class="row">
+                   <form  action="__MODULE__/Test/doEdit" method="post" enctype="multipart/form-data">
+                       <table>
+                           <tr>
+                               <td>科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目:<span>*</span></td>
+                               <td>&nbsp;</td>
+                               <td><input type="text" name="kemu" id="admin-username" value="{$data.kemu}"></td>
+                           </tr>
+                           <tr>
+                               <td>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级:<span>*</span></td>
+                               <td>&nbsp;</td>
+                               <td><input type="text" name="grade" id="admin-password" value="{$data.grade}"></td>
+                           </tr>
+                           <tr>
+                               <td>资料名称:<span>*</span></td>
+                               <td>&nbsp;</td>
+                               <td><input type="text" name="zname" id="admin-repassword" value="{$data.zname}"></td>
+                           </tr>
+                           <tr>
+                               <td>摘要:<span>&nbsp;</span></td>
+                               <td>&nbsp;</td>
+                               <td><textarea rows="5" cols="30" name="zhaiyao">{$data.zhaiyao}</textarea></td>
+                           </tr>
+                           <tr>
+                               <td>资料内容:<span>&nbsp;</span></td>
+                               <td>&nbsp;</td>
+                               <td><textarea rows="10" cols="30" name="content">{$data.content}</textarea></td>
+                           </tr>
+                           <tr>
+                                <input type="hidden" value="{$data.id}" name="id" />
+                                <td>&nbsp;</td>
+                                <td><input type="submit" value="提交" name="submit"/></td>
+                                <td><button type="button" id="cancle" onclick="history.back(-1)"
+>返回</button></td>
+                            </tr>
+                       </table>
+                  </form>
+                </div> 
+
+                
+              </div>
+            </div>
+          </div>
+	</div>
+	

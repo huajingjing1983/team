@@ -1,0 +1,65 @@
+ 
+              <div class="col-md-10 column">
+                <ul class="breadcrumb">
+                  <li><a href="__MODULE__/Index/index">首页</a></li>
+                  <li><a href="__MODULE__/Book/book_all">资料试题</a></li>
+                  <li class="active">所有资料</li>
+                </ul>
+                <form action="__MODULE__/Test/del">
+                <div class="row" id="add-del">
+                
+                	<div class="col-md-2 column">
+                	  
+                    <button type="button"><span class="glyphicon  glyphicon-user"></span> <a href="test_add.html"  >添加资料</a></button>
+		            </div>
+		       
+		        <div class="col-md-2 column">
+                 <button type="submit"><span class="glyphicon  glyphicon-user"></span> 批量删除</button>
+		        </div>
+		        <div class="col-md-3 column">
+		        </div>
+		       <div class="col-md-5 column"><input type="text" id="search" value="请输入信息"><span><button>搜索</button></span> 
+		       </div>
+                </div>
+                <div class="row" id="admin-table">
+                <table class="table" style="margin-left:3%">
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" id="checkbox-all"></th>
+                       <th>ID</th>
+                      <th>科目</th>
+                      <th>年级</th>
+                      <th> 资料名称 </th>
+                      <th>摘要</th>
+                      <th>上传时间</th>
+                      <th>更新时间</th>
+                    </tr>
+                  </thead>
+                  <tbody> 
+                  <volist name="data" id="d">
+                    <tr class="info">
+                    <td> <input name="dataId[]" type="checkbox" id="checkbox" value="{$d.id}" /></td>
+                    <td> {$d.id}</td>
+                    <td> {$d.grade}</td>
+                    <td> {$d.zname}</td>
+                    <td> {$d.zhaiyao}</td>
+                    <td> {$d.addtime}</td>
+                    <td> {$d.updatetime}</td>
+                    <td> <a href="__MODULE__/Test/test_edit/id/{$d.id}">编辑</a>/<a  href="del/dataId/{$d.id}">删除</a></td>
+                    </tr>
+                  </volist>
+                    
+                    
+                  </tbody>
+                </table>
+                 
+                </div>
+                </form>
+              <div style="float:right">
+               {$page}
+               </div>
+              </div>
+            </div>
+          </div>
+	</div>
+	
