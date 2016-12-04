@@ -55,12 +55,10 @@ class DataController extends Controller {
 	    }
     }
     public function book_all(){
-    	// $dataModel = M('data');
-    	// $data = $dataModel->select();
-     //    $this->assign('data',$data);
-     //    $this->display();
-
+    	//var_dump(I("get.search"));exit;
+    	if(I("get.search")==''){
         $dataModel = D("data");
+        // var_dump($dataModel);exit;
         $count = $dataModel->count();
         $pagecount = 3;
         $page = new \Think\Page($count , $pagecount);
@@ -72,9 +70,26 @@ class DataController extends Controller {
         $page->setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% 第 '.I('p',1).' 页/共 %TOTAL_PAGE% 页 ( '.$pagecount.' 条/页 共 %TOTAL_ROW% 条)');
         $show = $page->show();
         $data = $dataModel->order('addtime desc')->limit($page->firstRow.','.$page->listRows)->select();
+        // var_dump($data);exit;
        $this->assign('data',$data);
         $this->assign('page',$show);
         $this->display();
+    }else{
+    	$goods=M("data");
+    	$keyword=$_GET['search'];
+    	// var_dump($keyword);exit;
+    	$conition['zid']=$keyword;
+    	$conition['subject']=$keyword;
+    	$conition['grade']=$keyword;
+    	$conition['thumb']=$keyword;
+    	$conition['dataname']=$keyword;
+    	$conition['zhaiyao']=$keyword;
+    	$conition['addtime']=$keyword;
+    	$conition['_logic']='OR';
+    	$Goods=$goods->where($conition)->select();
+    	$this->assign('data',$Goods);
+    	$this->display();
+    }
 
 
 
