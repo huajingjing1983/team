@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>支付</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<link rel="stylesheet" href="../css/bootstrap.min.css">	
+  <meta charset="UTF-8">
+  <title>支付</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="../css/bootstrap.min.css"> 
  <link rel="stylesheet" href="../css/pay.css">  
  <style type="text/css">
     a:hover{
@@ -28,7 +29,7 @@
     nav #we>li>ul>li{/*z-index: 999;*//*float: left;*/}
     #nar { padding-right: 30px; }
 </style>
-	
+  
 </head>
 <body>
 
@@ -118,7 +119,7 @@
       </div>
   
   <!-- 支付内容 -->
-	   <div class="row clearfix" style="margin-top:10%;">
+     <div class="row clearfix" style="margin-top:10%;">
     <div class="col-md-2 column">
     </div>
     <div class="col-md-2 column">
@@ -147,7 +148,7 @@
                 <p> 单价：</p>
              </div>    
              <div class="col-md-9 column">
-                <p style="color:red;"> 88￥</p>
+                <p style="color:red;" id="yuan"> 88</p>
              </div>
         </div>
 <div class="row clearfix">
@@ -157,11 +158,9 @@
       </p>
     </div>
    
-    <div class="col-md-10 column"><button type="button" class="btn btn-default">-</button><input type="text" value="1" style="height:2.2em;width:4em;text-align:center;"><button type="button" class="btn btn-default">+</button>  件（库存503件）
-    </div>
-   
-   
-  </div>
+    <div class="col-md-10 column"><button type="button" class="btn btn-default" id="jian">-</button><input type="text" value="1" style="height:2.2em;width:4em;text-align:center;" id="cont"><button type="button" class="btn btn-default" id="jia">+</button>  件（库存503件）
+            </div>     
+          </div>
 
       <button type="button" class="col-md-3 btn btn-default btn-danger" id="test">立即支付</button><span class="col-md-2 ">&nbsp;</span><button type="button" id="contant" class="col-md-3 btn btn-default btn-info"><a href="service.html" id="heng"><img src="../images/QQ.jpg" alt="" width="25%">&nbsp;&nbsp;联系我们</a></button>
     </div>
@@ -171,23 +170,12 @@
  
   </div>
 
-  <!--页脚-->
-    <div class="container navbar-fixed-bottom" style="background:rgb(0,112,189);margin-top:10px;">
-      <div class="row clearfix">
-        <div class="col-md-12 column">
-          <p style="text-align:center;padding-top:20px;">地址: 石家庄市裕华区南二环东路20号     石家庄河北师范大学软件学院</p>
-          <p style="text-align:center;">冀ICP备XXXXXXXX号-X    站长统计</p>
-        </div>
-      </div>
-    </div>
-    <!--页脚结束-->
 
 
 <script id='spay-script' type='text/javascript' src='https://jspay.beecloud.cn/1/pay/jsbutton/returnscripts?appId=c5d1cba1-5e3f-4ba0-941d-9b0a371fe719'></script>
 
   <script>
     document.getElementById("test").onclick = function() {
-
         BC.err = function(data) {
             //注册错误信息接受
             alert(data["ERROR"]);
@@ -211,4 +199,27 @@
 </body>
 <script src="../js/jquery.js"></script>    
 <script src="../js/bootstrap.min.js"></script>
+<script>
+  $("#contant").click(function(){
+    window.location.href="service.html";
+  });
+  
+window.dan=$("#yuan").html();
+  
+  $("#jia").click(function(){
+    window.count=parseInt($("#cont").val());
+    window.count=window.count+1;
+
+     window.zong= window.dan*window.count;
+    
+     $("#cont").val(window.count);
+      $("#yuan").html(window.zong); 
+  });
+  $("#jian").click(function(){
+     window.count=window.count-1;
+     window.zong= window.dan*window.count; 
+     $("#yuan").html(window.zong); 
+     $("#cont").val(window.count);
+  });
+</script>
 </html>
