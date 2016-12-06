@@ -1,0 +1,62 @@
+
+              <div class="col-md-10 column">
+                <ul class="breadcrumb">
+                  <li><a href="{:U('Index/index')}">首页</a></li>
+                  <li><a href="{:U('admin/all')}">管理员管理</a></li>
+                  <li class="active">所有管理员</li>
+                </ul>
+              <form  action="__MODULE__/admin/delete" role="form" >
+                <div class="row" id="add-del">
+            
+                	<div class="col-md-2 column">
+                	  <span class="glyphicon  glyphicon-user"></span> <a href="{:U('admin/add')}">添加管理员</a>
+		            </div>
+		       
+		        <div class="col-md-2 column">
+			         <button type="submit"><span class="glyphicon  glyphicon-user">批量删除</a></span> </button>
+		        </div>
+		        <div class="col-md-3 column">
+		        </div>
+		       <div class="col-md-5 column"><input type="text" id="search" value="请输入信息"><span><button>搜索</button></span> 
+		       </div>
+                </div>
+                <div class="row" id="admin-table" style="margin-left: 3%">
+                <table class="table" style="margin-left: 0%; border-spacing:0px;  " >
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" id="checkbox-all"></th>
+                       <th>adminID</th>
+                      <th>管理员姓名</th>
+                      <th> 注册时间</th>
+                      <th> 最近一次登录时间 </th>
+                       <th>操作</th>
+                    </tr>
+                  </thead>
+           
+             <volist name="administrator" id="u">
+                <tr>
+                <td><input type="checkbox" name="administratorId[]" id="checkbox" value="{$u.gid}">
+                  <label for="checkbox"></label></td>
+                <td>{$u.gid}</td>
+                <td>{$u.username}</td>
+                
+                <td>{$u.registertime} </td>
+                <td>{$u.lasttime} </td>
+                <td><a href="__MODULE__/admin/edit/administratorId/{$u.gid}">编辑</a><a href="#"></a> <a href="delete/administratorId/{$u.gid}">删除</a></td>
+            </tr>
+            </volist>
+
+                </table>
+
+                </div>
+            </form>
+              
+                <div style="float: right;">
+                {$page}
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+	</div>
