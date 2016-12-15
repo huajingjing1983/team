@@ -1,0 +1,91 @@
+  .a-header {
+    margin-top:-5%;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+.b-header {
+    
+	
+	overflow: hidden;
+}
+.c-header {
+    
+	margin-bottom: 70px;
+	overflow: hidden;
+}
+
+
+.a-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 300;
+
+}
+
+#data{
+	
+	text-align: center;
+	vertical-align: middle;
+
+}
+#data ul{
+	margin-top: 30px;
+}
+#data ul li{
+	list-style: none;
+	line-height: 30px;
+}
+#data ul li a{
+	text-decoration: none;
+	color: gray;
+}
+
+h2{
+	text-align: center;
+}
+hr { border-top: 1px solid #111010; }
+.gal-img p{
+	margin: 0px;
+}
+/*教材同步*/
+
+.gal-img p {
+    color: #464646;
+    font-size: 16px;
+    /*margin: 3em 0 1.5em;*/
+    text-align: center;
+    font-weight: bold;
+}
+
+.item-img .imgs{
+	width: 180px;
+	height: 250px;
+}
+@media (max-width: 1081px){
+.item,
+.item-hover,
+.item-hover .mask,
+.item-img,
+.item-info {
+	width: 100%;
+	height: 200px;						
+}
+.item-img .imgs{
+	width: 180px;
+	height: 195px;
+}
+}
+
+#ziliao-font ul li{
+   font-size:100%;
+}
+/*tabs*/
+.nav-tabs > li > a{
+	color:rgb(0,188,212);
+	background-color: white;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: rgb(0,188,212);
+	color:white;
+}
