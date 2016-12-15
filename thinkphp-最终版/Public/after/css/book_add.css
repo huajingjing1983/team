@@ -1,0 +1,50 @@
+﻿<style type="text/css">
+      #logo{
+        margin-left:18%;
+      }
+     
+      
+      #header{
+        background:rgb(0,112,189)
+      }
+       #list{
+        background-color: gray;
+        color: white;
+      }
+      
+      #admin-list .active{
+        background-color: gray;
+      }
+      #bs-example-navbar-collapse-1 li a{
+        color: white;
+      }
+       h4{
+        text-align: center;
+      }
+      form span{
+        color: red;
+      }
+      .list-group-item a{
+        
+        color: black;
+        text-decoration: none;
+      }.list-group-item a:hover{
+        
+        color: blue;
+      }
+      form table{
+        margin-left:10%;
+        border-collapse:   separate;   
+        border-spacing:   10px; 
+      }
+
+      form table tr td{
+        font-size:1.5rem; 
+      }
+      form table tr td span{
+        color:red;
+      }
+      form table tr td button{
+        margin-left:20%;
+      }
+    </style>
