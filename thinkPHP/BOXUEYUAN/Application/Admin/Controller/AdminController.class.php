@@ -84,7 +84,7 @@ class AdminController extends Controller{
             }
         }      
     }
-
+// 删除方法，先获取之后再删除id即可
 
 
 
