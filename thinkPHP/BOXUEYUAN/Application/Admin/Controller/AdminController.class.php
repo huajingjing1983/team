@@ -193,8 +193,7 @@ class AdminController extends Controller{
  //        }
  //    }
  //    public function lists(){
- //        $userModel=D("user");
- //        $user=$userModel->select();
+ //        
  //        
  //    }
  // 
