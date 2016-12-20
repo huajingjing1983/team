@@ -128,7 +128,7 @@ class AdminController extends Controller{
         $this->assign('page',$show);
         $this->display();       
     }
-
+//页面的list展示页面。并且进行了页面的页面的获取和排版
 
 // $this->display();
 	
