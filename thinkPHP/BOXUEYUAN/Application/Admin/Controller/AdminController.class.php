@@ -208,9 +208,7 @@ class AdminController extends Controller{
  //        //
  //       
  //        
- //        public function pass(){
- //        $userModel=D("user");
- //        $user=$userModel->select();
+ //      
  //        $this->assign('user',$user);
  //        $this->display();
  //    }
