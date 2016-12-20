@@ -192,10 +192,7 @@ class AdminController extends Controller{
  //            $this->error("添加失败");
  //        }
  //    }
- //    public function lists(){
- //        
- //        
- //    }
+ //  
  // 
  //   
  //    public function doPass(){
