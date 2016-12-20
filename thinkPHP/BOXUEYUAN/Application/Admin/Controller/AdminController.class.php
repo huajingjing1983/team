@@ -176,18 +176,7 @@ class AdminController extends Controller{
  //  
  // 
  //   
- //    public function doPass(){
- //       
- //        $userModel=D("user");
- //        if (!$userModel->create()) {
- //            $this->error($userModel->getError());
- //        }
- //        if ($userModel->add()) {
- //            $this->success("添加成功",U("lists"));
- //        }else{
- //            $this->error("添加失败");
- //        }
- //    }
+ 
     
 
 }
