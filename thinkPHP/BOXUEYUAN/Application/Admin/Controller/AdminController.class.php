@@ -151,10 +151,7 @@ class AdminController extends Controller{
 	// 	
 	// }
 	   //   public function delete(){
-    //     $id = $_GET['administratorId'];
     //    
-    //         $this->success("删除成功！");
-    //     } 
     //     
     //     }       
     // }
