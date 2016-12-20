@@ -155,10 +155,7 @@ class AdminController extends Controller{
     //    
     //         $this->success("删除成功！");
     //     } 
-    //     else{
-    //         if(M("administrator")->delete($id)){
-    //             $this->success("删除成功！");
-    //         }
+    //     
     //     }       
     // }
 
