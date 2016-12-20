@@ -159,23 +159,7 @@ class AdminController extends Controller{
  //        }
  //        $this->display();
  //    }
- //    public function doAdd(){
- //        if (!IS_POST) {
- //            exit("bad request请求");
- //        }
- //        $userModel=D("user");
- //        if (!$userModel->create()) {
- //            $this->error($userModel->getError());
- //        }
- //        if ($userModel->add()) {
- //            $this->success("添加成功",U("lists"));
- //        }else{
- //            $this->error("添加失败");
- //        }
- //    }
- //  
- // 
- //   
+ 
  
     
 
