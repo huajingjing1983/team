@@ -6,20 +6,17 @@ class AdminController extends Controller{
 	public function password(){
 		$this->display();
 	}
+
+
 	public function edit(){
         $adminModel=D("administrator");
         $admin=$adminModel->select();
         $this->assign('administrator',$admin);
         $this->display();
     }
+    // 修改的方法
     public function doEdit(){
-        // if (IS_POST) {
-        //     $model=M("user");
-        //     $model=create();
-        //     if($model->save()){
-        //         $this->success("修改成功", U("lists"));
-        //     }
-        // }
+
         if (!IS_POST) {
             exit("bad request请求");
         }
