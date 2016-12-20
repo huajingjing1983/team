@@ -233,9 +233,7 @@ class AdminController extends Controller{
  //        $this->display();
  //    }
  //    public function doPass(){
- //        if (!IS_POST) {
- //            exit("bad request请求");
- //        }
+ //       
  //        $userModel=D("user");
  //        if (!$userModel->create()) {
  //            $this->error($userModel->getError());
