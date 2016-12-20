@@ -199,8 +199,7 @@ class AdminController extends Controller{
  //        $this->display();
  //    }
  //    public function edit(){
- //        $userModel=D("user");
- //        $user=$userModel->select();
+ //       
  //        $this->assign('user',$user);
  //        $this->display();
  //    }
