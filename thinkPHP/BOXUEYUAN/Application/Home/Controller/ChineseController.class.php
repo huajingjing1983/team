@@ -1,10 +1,9 @@
-
 <?php  
 namespace Home\Controller;
 use Think\Controller;
 class ChineseController extends Controller {
     public function Chinese(){
-
+ 
     //教材
     	$chineseModel1=M('data');
     	$chinese1=$chineseModel1->where('subject="语文" AND grade="高一"')->limit(4)->select();
