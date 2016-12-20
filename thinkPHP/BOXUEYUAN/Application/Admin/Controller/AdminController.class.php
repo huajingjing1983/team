@@ -63,7 +63,7 @@ class AdminController extends Controller{
         }
 }
 
-
+//添加方法doadd，但是会先跳到add去
 
 
     public function delete(){
