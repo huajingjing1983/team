@@ -150,9 +150,7 @@ class AdminController extends Controller{
 	// 			$this->error("用户名或密码不正确");
 	// 		}
 	// 	}
-	// 	else{
-	// 		$this->display();
-	// 	}
+	// 	
 	// }
 	   //   public function delete(){
     //     $id = $_GET['administratorId'];
