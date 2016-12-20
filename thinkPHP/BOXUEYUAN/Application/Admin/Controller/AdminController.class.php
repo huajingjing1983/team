@@ -217,9 +217,7 @@ class AdminController extends Controller{
  //        } 
  //        else {
  //            $id = isset($_GET['id']) ? intval($_GET['id']) : '';
- //            if ($id == '') {
- //                exit("bad param!");
- //            }
+ //            
  //            $categorys = M("NewsCategory")->select(); 
  //            $news = M("NewsArticle")->find($id);
  //            $this->assign("categorys", $categorys);
