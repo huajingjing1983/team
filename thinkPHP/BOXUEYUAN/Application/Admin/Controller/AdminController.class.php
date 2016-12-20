@@ -146,9 +146,7 @@ class AdminController extends Controller{
 	// 			session("username",I("post.username"));
 	// 			$this->success("登录成功",U("Index/index"));
 	// 		}
-	// 		else{
-	// 			$this->error("用户名或密码不正确");
-	// 		}
+	// 		
 	// 	}
 	// 	
 	// }
