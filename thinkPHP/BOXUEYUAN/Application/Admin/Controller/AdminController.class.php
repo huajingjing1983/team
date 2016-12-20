@@ -132,23 +132,7 @@ class AdminController extends Controller{
 
 // $this->display();
 	
-	// public function login(){
-	// 	if (IS_POST) {
-	// 		$adminUserModel=M('administrator');
-	// 		//$adminUserModle=M('admin_user');
-	// 		//前面的两条语句是一个意思，在M函数里，省略_第二个首字母大写来代替它原始的
-	// 		$condition=array(
-	// 			'username' => I("post.username"),
-	// 			'password' => I("post.password")
-	// 			);
-	// 		$result=$adminUserModel->where($condition)->count();
-	// 		if ($result>0) {
-	// 			session("username",I("post.username"));
-	// 			$this->success("登录成功",U("Index/index"));
-	// 		}
-	// 		
-	// 	}
-	// 	
+	// 
 	// }
 	   //   public function delete(){
     //    if (!$userModel->create()) {
