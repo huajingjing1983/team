@@ -195,8 +195,7 @@ class AdminController extends Controller{
  //    public function lists(){
  //        $userModel=D("user");
  //        $user=$userModel->select();
- //        $this->assign('user',$user);
- //        $this->display();
+ //        
  //    }
  // 
  //   
