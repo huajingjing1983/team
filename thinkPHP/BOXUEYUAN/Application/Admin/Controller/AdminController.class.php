@@ -204,14 +204,7 @@ class AdminController extends Controller{
  //        $this->assign('user',$user);
  //        $this->display();
  //    }
- //    public function doEdit(){
- //        //
- //       
- //        
- //      
- //        $this->assign('user',$user);
- //        $this->display();
- //    }
+ //   
  //    public function doPass(){
  //       
  //        $userModel=D("user");
