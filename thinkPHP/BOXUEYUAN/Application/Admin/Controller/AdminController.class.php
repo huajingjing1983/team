@@ -152,10 +152,7 @@ class AdminController extends Controller{
 	// }
 	   //   public function delete(){
     //     $id = $_GET['administratorId'];
-    //     if(is_array($id)){
-    //         foreach($id as $value){
-    //             M("administrator")->delete($value);
-    //         }  
+    //    
     //         $this->success("删除成功！");
     //     } 
     //     else{
