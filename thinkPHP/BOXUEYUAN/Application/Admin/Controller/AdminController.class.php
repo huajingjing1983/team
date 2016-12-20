@@ -109,6 +109,8 @@ class AdminController extends Controller{
         }
     }
 
+    //修改密码创建之后进行修改
+
   public function all(){
         $adminModle = D("administrator");
         $count = $adminModle->count();
