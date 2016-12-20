@@ -207,15 +207,7 @@ class AdminController extends Controller{
  //    public function doEdit(){
  //        //
  //       
- //        else {
- //            $id = isset($_GET['id']) ? intval($_GET['id']) : '';
- //            
- //            $categorys = M("NewsCategory")->select(); 
- //            $news = M("NewsArticle")->find($id);
- //            $this->assign("categorys", $categorys);
- //            $this->assign("news", $news);
- //            $this->display();
- //        }
+ //        
  //        public function pass(){
  //        $userModel=D("user");
  //        $user=$userModel->select();
