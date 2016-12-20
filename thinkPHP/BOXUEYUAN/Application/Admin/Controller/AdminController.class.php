@@ -205,16 +205,8 @@ class AdminController extends Controller{
  //        $this->display();
  //    }
  //    public function doEdit(){
- //        // if (!IS_POST) {
- //        //     exit("bad request请求");
- //        // }
- //        if (IS_POST) {
- //            $model=M("user");
- //            $model=create();
- //            if($model->save()){
- //                $this->success("修改成功", U("lists"));
- //            }
- //        } 
+ //        //
+ //       
  //        else {
  //            $id = isset($_GET['id']) ? intval($_GET['id']) : '';
  //            
