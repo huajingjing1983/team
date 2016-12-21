@@ -1,0 +1,88 @@
+{__NOLAYOUT__}
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<title>后台登陆</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="__PUBLIC__/after/css/bootstrap.min.css">
+  <link rel="stylesheet" href="__PUBLIC__/after/css/admincss.css">	
+  <link rel="stylesheet" href="__PUBLIC__/after/css/admin_style.css">
+  <style>
+  
+  .container{
+    width:681.5px;
+    height:334px;
+    margin-top:8%;
+
+  }
+  #admin_top{
+     background: -webkit-linear-gradient(left,#0294e7,#0a3869);
+     height:80px;
+     color:white;
+     padding-top:5%;
+     padding-left:55%;
+  }
+  #admin_mid{
+     background:#0b3768;
+     height:250px;
+    color:white;
+     padding-left:20%;
+  }
+  h3{
+  margin-top:5%;
+  color:white;
+}
+h3 small{
+  color:white;
+}
+  #admin_bottom{
+     background: -webkit-linear-gradient(left,#0c3869,#0293e4);
+     height:80px;
+     color:white;
+     padding-left:70%;
+      padding-top:4%;
+  }
+  .col-md-12{
+    margin-top:3%;
+  }
+
+  </style>
+
+</head>
+<body>
+<div class="container">
+<div class="row" id="admin_top">With me on the shoulder, to help you grow</div>
+<div class="row" id="admin_mid">
+  <div class="col-md-12 column">
+      <h3 class="text-left">
+       后台管理平台&nbsp;&nbsp;<small>博学苑网站</small>
+      </h3> 
+     
+       </div>
+<form role="form" method="post" action="">
+     <div class="col-md-12 column">
+        <div class="col-md-2 column" style="color:white">账号
+        </div>
+        <div class="col-md-2 column"><input type="text" name="username" id="username" value="">
+        </div> 
+    </div>
+     <div class="col-md-12 column">
+        <div class="col-md-2 column" style="color:white">密码
+        </div>
+        <div class="col-md-2 column"><input type="text" name="password" id="password" value="">
+        </div> 
+    </div>
+     <div class="col-md-12 column" style="margin-left:18%">
+        <div class="col-md-3 column"><button type="submit" class="btn btn-default btn-info" id="admin_btton">登录</button>
+        </div> 
+    </div>
+</form>
+</div>
+<div class="row" id="admin_bottom">We are your best choice</div>
+</div>
+</body>
+<script src="__PUBLIC__/after/js/jquery.js"></script>    
+<script src="__PUBLIC__/after/js/bootstrap.min.js"></script>	
+
+</html>
