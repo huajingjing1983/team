@@ -1,0 +1,142 @@
+﻿
+              <div class="col-md-10 column" >
+                <ul class="breadcrumb"> 
+                  <li>
+                     <a href="__MODULE__/Index/index"><span class="glyphicon  glyphicon-home"></span> 首页</a>
+                  </li>
+                  <li>
+                     <a href="__MODULE__/video/video_all">视频管理</a>
+                  </li>
+                  <li class="active">
+                    所有视频
+                  </li>
+                </ul>
+               
+                <form action="" method="get">
+                    <div class="col-md-5 column" id="enenene"><input type="text" id="search" value="" name="search"><span><button type="submit">搜索</button></span> 
+                  </div>
+                </form>
+                <form action="__MODULE__/Video/delete">
+                <div class="row" id="add-del"> 
+                <div class="col-md-2 column">
+                     <button><span class="glyphicon  glyphicon-user"></span><a href="{:U('Admin/video/video_add')}">添加视频</a></button>
+                  </div>           
+                  <div class="col-md-2 column">
+                    <button type="submit"><span class="glyphicon  glyphicon-user">批量删除</span></button>
+                  </div>
+                  <div class="col-md-3 column">
+                  </div>
+                  </div>
+                  <br>
+                <table class="table" id="video_table" style="margin-left:30px;border-spacing: 0px;">
+                  <thead>
+                    <tr>
+                      <th>
+                        
+                      </th>
+                      <th>
+                        ID
+                      </th>
+                      <th>
+                        科目
+                      </th>
+                      <th>
+                        年级
+                      </th>
+                      <th>
+                        视频名称
+                      </th>
+                      <th>
+                        上传时间
+                      </th>
+                      <th>
+                        更新时间
+                      </th>
+                      <th>
+                        操作
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <volist name="video" id="V">
+                    <tr>
+                      <td>
+                        
+                       <input name="dataId[]" type="checkbox" id="checkbox" value="{$V.vid}" />
+
+                        
+                      </td>
+                      <td>
+                        {$V.vid}
+                      </td>
+                      <td>
+                        {$V.subject}
+                      </td>
+                      <td>
+                        {$V.grade}
+                      </td>
+                      </td>
+                      <td>
+                        {$V.videoname}
+                      </td>
+                      </td>
+                      <td>
+                        {$V.addtime}
+                      </td>
+                      </td>
+                      <td>
+                        {$V.updatetime}
+                      </td>
+                      </td>
+                      <td>
+                        <a  href="delete/dataId/{$V.vid}">删除</a>/<a href="__MODULE__/Video/video_edit/id/{$V.vid}">编辑</a>
+
+                      </td>
+                    </tr>
+                  </volist>
+                    
+                  </tbody>
+                </table>
+               <!--  <ul class="pagination">
+                  <li>
+                     <a href="#">上一页</a>
+                  </li>
+                  <li>
+                     <a href="#">1</a>
+                  </li>
+                  <li>
+                     <a href="#">2</a>
+                  </li>
+                  <li>
+                     <a href="#">3</a>
+                  </li>
+                  <li>
+                     <a href="#">4</a>
+                  </li>
+                  <li>
+                     <a href="#">5</a>
+                  </li>
+                  <li>
+                     <a href="#">下一页</a>
+                  </li>
+                </ul> -->
+                </form>
+              <div style="float:right">{$page}</div>
+              </div>
+            </div>
+            <div class="container" style="background:rgb(0,112,189);margin-top:10px;">
+              <div class="row clearfix">
+                
+              </div>
+            
+          </div>
+        </div>
+      </div>
+<style>
+ 
+  #enenene{
+    float:right;
+    margin-top:-15px;
+  }
+
+</style>

@@ -1,0 +1,77 @@
+﻿
+              <div class="col-md-10 column"> 
+                <ul class="breadcrumb">
+                  <li>
+                     <a href="__MODULE__/Index/index"><span class="glyphicon  glyphicon-home"></span> 首页</a>
+                  </li>
+                  <li>
+                     <a href="__MODULE__/video/video_all">视频管理</a>
+                  </li>
+                  <li class="active">
+                    编辑视频
+                  </li>
+                </ul>
+                <div class="row" id="admin-admin"><h2>编辑视频</h2></div><br/>
+                <form action="__MODULE__/video/doEdit" method="post"  enctype="multipart/form-data">
+
+                  <table>
+                             
+                            <tr>
+                                <td>科目:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="subject" id="kemuname" value="{$video.subject}"></td>
+                            </tr>              
+                            <tr>
+                                <td>年级:</td>
+                                <td>&nbsp;</td>
+                                <td><select name="grade">
+                                      <option value ="高一">高一</option>
+                                      <option value ="高二">高二</option>
+                                      <option value="高三">高三</option>
+                                    </select>
+                                </td>
+                            </tr>
+                             
+                            
+                            <tr>
+                                <td>视频名称:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="videoname" id="name" value="{$video.videoname}"></td>
+                            </tr>
+                            <tr>
+                                <td>上传者:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="Tid" value="{$video.Tid}"></td>
+                            </tr>
+                            <tr>
+                                <td>选择文件:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="file" name="address"></td>
+                            </tr>                      
+                            
+                        
+                            <tr>
+                                <td>视频简介:</td>
+                                <td>&nbsp;</td>
+                                <td><textarea rows="10" cols="30"name="content">{$video.content}</textarea></td>
+                            </tr>
+                            <tr>
+                                <input type="hidden" value="{$video.vid}" name="id" />
+                                <td><input type="submit" value="提交" id="save"/></td>
+                                <td>&nbsp;</td>
+                                <td><button type="button"id="cancle" onclick="history.back(-1)">返回</button></td>
+                            </tr>
+                  </table>
+                </form>
+              </div>
+            </div>
+            <div class="container" style="background:rgb(0,112,189);margin-top:10px;">
+              <div class="row clearfix">
+               
+              </div>
+            
+          </div>
+        </div>
+      </div>
+
+
