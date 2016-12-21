@@ -1,0 +1,289 @@
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script><!DOCTYPE html>
+<html>
+<head>
+<title>教材内容</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<link href="css/footer.css" rel="stylesheet" type="text/css" y>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="css/swipebox.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<style>
+	.panel p{
+	text-indent:2em;
+}
+.panel-footer{
+	text-align:center;
+}
+.panel-footer a{
+      text-decoration:none;
+      color:white;
+}
+.panel-footer a:hover{
+      text-decoration:none;
+      color:white;
+}
+.panel-footer p{
+	color:red;
+}
+</style>
+</head>
+<body>
+<!-- header -->
+<div id="home" class="banner w3l" style="background-image: url(images/bvv1.jpg); min-height:400px; ">
+	<nav class="navbar navbar-default  wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s"style="background: rgb(0,188,212); opacity:0.8;">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header logo">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  style="background: rgb();" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<h1>
+								<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" width="70%" style="margin-top:-10%;"></a>
+								</h1>
+								
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+								<nav class="cl-effect-1">
+									<ul class="nav navbar-nav ">
+
+									<li ><a class="scroll hvr-bounce-to-bottom " href="indexlogin.html">首页<p>Home</p></a></li>
+										
+										<li id="act-Home"><a class="scroll hvr-bounce-to-bottom active" href="course.html ">课程天地<p style="text-align: center;"> Course</p></a></li>
+										
+									    <li><a class="scroll hvr-bounce-to-bottom" href="teacher.html">名师团队<p style="text-align: center;">Teacher</p></a></li>
+										<li><a class="scroll hvr-bounce-to-bottom" href="hot.html">热点资讯 <p style="text-align: center;">News</p></a></li>
+                                         <li><a class="scroll hvr-bounce-to-bottom " href="about.html">关于我们<p style="text-align: center;">About</p></a></li>
+										<li><a class="scroll hvr-bounce-to-bottom" href="person_student.html">个人中心<p style="text-align: center;">Center</p></a></li>
+									</ul>
+								</nav>
+							</div><!-- /navbar-collapse -->
+	</nav>
+	<div class="container">
+		
+		<div class="banner-info wow bounceInDown" data-wow-duration="1s" data-wow-delay="0s">
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									 // Slideshow 4
+									$("#slider3").responsiveSlides({
+										auto: true,
+										pager: false,
+										nav: true,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+									$('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+										$('.events').append("<li>after event fired.</li>");
+										}
+										});
+										});
+			</script>
+			<!-- <div  class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="banner-text">
+							<h3>成就未来，BOXUEYUAN</h3>
+							<p>用我的肩膀 助你成长</p>
+						</div>
+					</li><li>
+						<div class="banner-text">
+							<h3>最新教材，最新资料</h3>
+							<p>我们致力于推送第一手资料</p>
+						</div>
+					</li><li>
+						<div class="banner-text">
+							<h3>最强名师，强强联手</h3>
+							<p>我们为您提供最优秀的师资力量</p>
+						</div>
+					</li><li>
+						<div class="banner-text">
+							<h3>最新资讯，最快了解</h3>
+							<p>我们帮您最快了解高考。</p>
+						</div>
+					</li>
+					<li>
+						<div class="banner-text">
+							<h3>用我的肩膀 助你成长</h3>
+							<p>相信我们，打造未来</p>
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</div> -->
+		<!-- <div class="more-button text-center">
+			<a href="#ban-bot" class="scroll"><img src="images/icon.png" alt=" "/></a>
+		</div> -->
+	    </div>
+    </div>
+</div>
+<!--面包屑-->
+<div class="container" id="container">
+	<div class="row">
+		<div class="span12">
+			<ul class="breadcrumb">
+				<li>
+					<a rel="nofollow" href="index.html">首页</a> 
+				</li>
+				<li>
+					<a rel="nofollow" href="course.html">课程天地</a> 
+				</li>
+				<li class="active">
+					教材内容
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--内容-->
+		 <div class="container">
+     
+     <!--content-->
+	
+	 <br>
+	 <div class="row wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
+		<div class="col-md-1"></div>
+	 	<div class="col-md-10">
+	 		<div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            高一数学教材-数学1(人教版）
+          </h3>
+        </div>
+        <div class="panel-body">
+          <h3 style="text-align:center">高一数学教材（人教版)</h3>
+             <h4>一、集合的概念</h4>  
+             <p>集合中的元素具有确定性、互异性和无序性</p>  
+             <h4>二、集合的表示法</h4>
+             <p>①自然语言法：用文字叙述的形式来描述集合. ②列举法：把集合中的元素一一列举出来，写在大括号内表示集合. ③描述法：{x|x具有的性质}，其中x为集合的代表元素.④图示法：用数轴或韦恩图来表示集合. </p>
+              <h4>三、求函数的定义域时，一般遵循以下原则：</h4>
+             <p>①()fx是整式时，定义域是全体实数． ②()fx是分式函数时，定义域是使分母不为零的一切实数． ③()fx是偶次根式时，定义域是使被开方式为非负值时的实数的集合． ④对数函数的真数大于零，当对数或指数函数的底数中含变量时，底数须大于零且不等于1． ⑤tanyx中，()2xkkZ． ⑥零（负）指数幂的底数不能为零． ⑦若()fx是由有限个基本初等函数的四则运算而合成的函数时，则其定义域一般是各基本初等函数的定义域的交集．⑧对于求复合函数定义域问题，一般步骤是：若已知()fx的定义域为[,ab，其复合函数[()]fgx的定义域应由不等式()agxb解出． ⑨对于含字母参数的函数，求其定义域，根据问题具体情况需对字母参数进行分类讨论． ⑩由实际问题确定的函数，其定义域除使函数有意义外，还要符合问题的实际意义．</p>
+              <h4>四、求函数的值域或最值</h4>
+             <p>求函数最值的常用方法和求函数值域的方法基本上是相同的．事实上，如果在函数的值域中存在一个最小（大）数，这个数就是函数的最小（大）值．因此求函数的最值与值域，其实质是相同的，只是提问的角度不同．求函数值域与最值的常用方法：       ①观察法：对于比较简单的函数，我们可以通过观察直接得到值域或最值．  ②配方法：将函数解析式化成含有自变量的平方式与常数的和，然后根据变量的取值范围确定函数的值域或最值．  ③判别式法：若函数()yfx可以化成一个系数含有y的关于x的二次方程2 ()()()0ayxbyxcy，则在()0ay时，由于,xy为实数，故必须有2 ()4()()0byaycy，从而确定函数的值域或最值． ④不等式法：利用基本不等式确定函数的值域或最值．  ⑤换元法：通过变量代换达到化繁为简、化难为易的目的，三角代换可将代数函数的最值问题转化为三角函 数的最值问题．  ⑥反函数法：利用函数和它的反函数的定义域与值域的互逆关系确定函数的值域或最值． ⑦数形结合法：利用函数图象或几何方法确定函数的值域或最值． ⑧函数的单调性法</p>
+             <h2>【1.2.2】函数的表示法</h2>
+              <h4>函数的表示方法</h4>
+             <p>表示函数的方法，常用的有解析法、列表法、图象法三种．       解析法：就是用数学表达式表示两个变量之间的对应关系．列表法：就是列出表格来表示两个变量之间的对 应关系．图象法：就是用图象表示两个变量之间的对应关系．</p>
+              <h4>函数的图象--作图</h4>
+             <p>一、利用描点法作图： 
+             ①确定函数的定义域； ②化解函数解析式； ③讨论函数的性质（奇偶性、单调性）；  ④画出函数的图象．</p>
+              
+             
+              <h4>二、识图</h4>
+             <p>对于给定函数的图象，要能从图象的左右、上下分别范围、变化趋势、对称性等方面研究函数的定义域、值域、单调性、奇偶性，注意图象与函数解析式中参数的关系．</p>
+        </div>
+        <div class="panel-footer">
+          <h3 >阅读已结束，如想继续阅读请下载文本！</h3>
+          <p>1334人已下载</p>
+          <button type="button" class="btn btn-primary" id="btn"><a href="高一数学教材.docx">下载</a></button>
+        </div>
+      </div>
+	 	</div>
+	 	<div class="col-md-1"></div>
+	 	
+	 </div>
+	  <!--content结束-->
+     </div>
+<!--内容结束-->
+<div class="copy-right" style="background-color: rgb(50,56,60);margin-top:20px;">
+	<div class="container">
+		<div class="row clearfix">
+		<div class="col-sm-3 column" style="padding-right: 10px;">
+			<dl style="float:left; padding-right: 0px;">
+				<dt class="footdt">
+					<h3 style="text-align: center;">友情链接</h3>
+				</dt>
+				<dd class="footdd" style="font-family: '微软雅黑';font-size:14px" >
+					<a href="">石家庄培训机构||石家庄三中</a></br>
+					<a href="">石家庄培训机构||石家庄三中</a></br>
+					<a href="">石家庄培训机构||石家庄三中</a></br>
+					<a href="">石家庄培训机构||石家庄三中</a></br>
+					<!-- 石家庄英语培训机构&nbsp;&nbsp;&nbsp;石家庄四十三中学</br>
+					石家庄英语培训机构&nbsp;&nbsp;&nbsp;石家庄四十三中学</br>	石家庄英语培训机构&nbsp;&nbsp;&nbsp;石家庄四十三中学</br>		 -->
+				</dd>				
+			</dl>
+
+
+</div>
+
+
+
+
+
+<div class="col-sm-3 column" style="padding-right: 10px;">
+
+				<dl style="float:left; padding-right: 0px;">
+				<dt class="footdt">
+					<h3 style="text-align: center;">了解更多</h3>
+				</dt>
+				<dd class="footdd" style="font-family: '微软雅黑';font-size:14px" >
+					<p>给予我们更多的支持与关心</p>
+					<p>关注我们的发展与我们未来</p>
+					<p>我的成功案例与高考的模范</p>
+					<p>我们的相关工作部署与试试</p>
+					
+					<!-- 石家庄英语培训机构||&nbsp;石家庄四十三中学</br>
+					石家庄英语培训机构||&nbsp;石家庄四十三中学</br>	石家庄英语培训机构||&nbsp;石家庄四十三中学</br>		 -->
+				</dd>				
+			</dl>
+
+</div>
+
+
+<div class="col-sm-3 column" style="padding-right: 10px;">
+
+
+
+
+				<dl style="float:left; padding-right: 0px;">
+				<dt class="footdt">
+					<h3 style="text-align: center;">产品案例</h3>
+				</dt>
+				<dd class="footdd" style="font-family: '微软雅黑';font-size:14px" >
+					<p>最强名师伴你高考冲刺</p><p>最新资料助你圆名校梦</p><p>最新资讯把握高考动态</p><p>最强博学苑圆你大学梦</p>
+					
+				</dd>				
+			</dl>
+			</br>
+		
+		</div>
+		
+		<div class="col-sm-3 column"> <!-- <p style="color:white;margin-top:22px; font-size: 17px; ">博学苑微信</p> -->
+		   <img src="images/erweima.png" class="imga" style="width:145px; margin-top:0%  ;margin-left: 15px;"></br></br>
+		  
+		</div>
+		<!-- <div class="col-md-2 column">
+		   <img src="images/qr_2.png" class="imga"xiia></br></br>
+		   <p>博学苑qq</p>
+		</div> -->
+	</div>
+		<div class="col-md-12 column">
+			<div class="address" >
+			 <p class="footp"style="color: rgb(134,137,139);">地址: 石家庄市裕华区南二环东路20号     石家庄河北师范大学软件学院</p>
+            <p class="footp" style="color: rgb(134,137,139);">冀ICP备XXXXXXXX号-X    站长统计</p></div></div>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+
+</body>
+</html>
