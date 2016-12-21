@@ -1,0 +1,128 @@
+﻿
+              <div class="col-md-10 column"> 
+                <ul class="breadcrumb">
+                   <li>
+                     <a href="__MODULE__/Index/index"><span class="glyphicon  glyphicon-home"></span> 首页</a>
+                  </li> 
+                  <li> 
+                     <a href="__MODULE__/News/all">新闻管理</a>
+                  </li>
+                  <li class="active">
+                    所有新闻 
+                  </li>
+                </ul>
+                <form action="" method="get">
+                   <div class="col-md-5 column" id="enenene"><input type="text" id="search" value="" name="search"><span><button type="submit">搜索</button></span> 
+                  </div>
+                </form> 
+                
+                <form  action="__MODULE__/News/del" > 
+                <div class="row" id="add-del">                
+                  <div class="col-md-2 column">
+                     <button><span class="glyphicon  glyphicon-user"></span><a href="{:U('Admin/News/add')}">添加新闻</a></button>
+                  </div>           
+                  <div class="col-md-2 column">
+                    <button type="submit"><span class="glyphicon  glyphicon-user">批量删除</span></button>
+                  </div>
+                  <div class="col-md-3 column">
+                  </div>
+                 
+                </div>
+                <div class="row" id="admin-table">
+                <table class="table"  style="margin-left:-30px;border-spacing: 0px;">
+                  <thead>
+                    <tr>
+                      <th>                      
+                       <input name="checkall" type="checkbox" value="checkall" id="checkall"/>
+                      </th>
+                      <th>
+                        ID
+                      </th>
+                      <th>
+                        年级
+                      </th>
+                      <th>
+                        科目
+                      </th>
+                      <th>
+                        新闻标题
+                      </th>
+                       <th>
+                        摘要
+                      </th>
+                       <th>
+                        作者
+                      </th>
+                      
+                      <th>
+                        上传时间
+                      </th>
+                      <th>
+                        更新时间
+                      </th>
+                      <th>
+                        操作
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody> 
+                  <volist name="news" id="newse">
+                    <tr >
+                    <td><input type="checkbox" name="id[]" value='{$newse.id}' id="checkbox1"/></td>
+                    <td>
+                        {$newse.id}
+                      </td>
+                      <td>
+                        {$newse.grade}
+                      </td>
+                      <td>
+                        {$newse.course}
+                      </td>
+                      
+                      <td style="width:15%;">
+                        <!--{$newse.title|mb_substr=###,0,10,'utf-8'}...-->
+                        {$newse.title}
+                      </td>
+                       <td style="width:20%;">
+                      
+                      {$newse.summary|mb_substr=###,0,70,'utf-8'}...
+                      </td>
+                       <td>
+                        {$newse.name}
+                      </td>
+                      
+                      </td>
+                      <td style="width:10%;">
+                        {$newse.addtime}
+                      </td>
+                      </td>
+                      <td style="width:10%;">
+                        {$newse.updatetime}
+                      </td>
+                      </td>
+                      <td>
+                        <a href="__MODULE__/News/del/id/{$newse.id}">删除</a>/<a href="__MODULE__/News/edit/id/{$newse.id}">编辑</a>
+                      </td>
+                    </tr>
+                  </volist>
+
+                   
+                  </tbody>
+                </table>
+                </div>
+                </form>
+                <div style="float:right">{$page}</div>
+              </div>
+            </div>
+          </div>
+  </div>
+  <style>
+      #enenene{
+        float:right;
+      }
+      table{
+        margin-top:10px;
+      }
+  </style>
+  
+            

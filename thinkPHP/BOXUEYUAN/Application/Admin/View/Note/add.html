@@ -1,0 +1,72 @@
+ 
+              <div class="col-md-10 column"> 
+                <ul class="breadcrumb">
+                  <li>
+                     <a href="__MODULE__/Index/index"><span class="glyphicon  glyphicon-home"></span> 首页</a>
+                  </li>
+                  <li><a href="__MODULE__/Note/all">笔记管理</a></li>
+                  <li class="active"> 
+                    添加笔记
+                  </li>
+                </ul>
+                <form role="form" action="__MODULE__/Note/doAdd" method="post" enctype="multipart/form-data">
+                  <table> 
+                           
+                            <tr>
+                                <td>科目:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="subject" id="kemuname"></td>
+                            </tr>              
+          
+                            <tr>
+                                <td>笔记名称:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="title" id="name"></td>
+                            </tr>
+                            <tr>
+                                <td>作者:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="name"></td>
+                            </tr>
+                            <tr>
+                                <td>学校:</td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="school"></td>
+                            </tr>
+                            <tr>
+                                <td>头像:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="file" name="img"></td>
+                            </tr>
+                            <tr>
+                                <td>笔记摘要:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><textarea rows="5" cols="30" name="summary"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>笔记内容:</td>
+                                <td>&nbsp;</td>
+                                <td><textarea rows="10" cols="30" name="content"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>上传者:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="autor"></td>
+                            </tr>
+                            <tr>
+                                <td><button type="submit" class="btn btn-info btn-default" id="save">保存</button></td>
+                                <td>&nbsp;</td>
+                                <td><button type="button" class="btn btn-info btn-default" onclick="history.back(-1)" id="cancle">取消</button></td>
+                            </tr>
+                  </table>
+                </form>
+              </div>
+            </div>
+            <div class="container" style="background:rgb(0,112,189);margin-top:10px;">
+              <div class="row clearfix">
+               
+              </div>            
+          </div>
+        </div>
+      </div>
+

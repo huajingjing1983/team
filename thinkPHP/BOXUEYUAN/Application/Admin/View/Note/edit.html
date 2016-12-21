@@ -1,0 +1,77 @@
+ 
+              <div class="col-md-10 column"> 
+                <ul class="breadcrumb">
+                  <li>
+                     <a href="__MODULE__/Index/index"><span class="glyphicon  glyphicon-home"></span> 首页</a>
+                  </li>
+                  <li><a href="__MODULE__/Note/all">笔记管理</a></li>
+                  <li class="active"> 
+                    编辑笔记
+                  </li>
+                </ul>
+                <form role="form" action="" method="post" enctype="multipart/form-data">
+                  <table>
+                           
+                            <tr>
+                                <td>科目:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="subject" id="kemuname" value="{$note.subject}"></td>
+                            </tr>              
+          
+                            <tr>
+                                <td>笔记名称:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="title" id="name" value="{$note.title}"></td>
+                            </tr>
+                            <tr>
+                                <td>作者:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="name" value="{$note.name}"></td>
+                            </tr>
+                            <tr>
+                                <td>学校:</td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="school" value="{$note.school}"></td>
+                            </tr>
+                            <tr>
+                                <td>头像:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><img src="__PUBLIC__/{$note.img}"  width="253px" height="165px"/><input type="file" name="img" id="admin-img"></td>
+                            </tr>
+                            <tr>
+                                <td>笔记摘要:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><textarea rows="5" cols="30" name="summary" value="{$note.summary}">{$note.summary}</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>笔记内容:</td>
+                                <td>&nbsp;</td>
+                                <td><textarea rows="10" cols="30" name="content"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>上传者:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="autor" value="{$note.autor}"></td>
+                            </tr>
+                            <tr>
+                                <td>上传时间:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="addtime" value="{$note.addtime}" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" value="提交" id="save" name="submit" /></td>
+                                <td>&nbsp;</td>
+                                <td><button type="button"id="cancle" onclick="history.back(-1)">返回</button></td>
+                            </tr>
+                  </table>
+                </form>
+              </div>
+            </div>
+            <div class="container" style="background:rgb(0,112,189);margin-top:10px;">
+              <div class="row clearfix">
+               
+              </div>            
+          </div>
+        </div>
+      </div>
+
