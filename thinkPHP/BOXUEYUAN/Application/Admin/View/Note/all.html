@@ -1,0 +1,78 @@
+ 
+              <div class="col-md-10 column">
+                <ul class="breadcrumb">
+                  <li><a href="__MODULE__/Index/index">首页</a></li>
+                  <li><a href="__MODULE__/Note/all">笔记管理</a></li>
+                  <li class="active">所有笔记</li>
+                </ul>
+                <form action="" method="get">
+                   <div class="col-md-5 column" id="enenen"><input type="text" id="search" value="" name="search"><span><button type="submit">搜索</button></span> </div>
+                </form>
+                
+                <form action="__MODULE__/Note/del">
+                <div class="row" id="add-del">
+                
+                  <div class="col-md-2 column">
+                    
+                    <button type="button"><span class="glyphicon  glyphicon-user"></span> <a href="__MODULE__/Note/add"  >添加笔记</a></button>
+                </div>
+            
+            <div class="col-md-2 column">
+                 <button type="submit"><span class="glyphicon  glyphicon-user"></span> 批量删除</button>
+            </div>
+            <div class="col-md-3 column">
+            </div>
+          
+                </div>
+                <div class="row" id="admin-table">
+                <table class="table" style="margin-left:5px;border-spacing: 0px;">
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" id="checkbox-all"></th>
+                       <th>ID</th>
+                      <th>科目</th>
+                      <th>状元姓名</th>
+                      <th> 笔记名称 </th>
+                      <th>摘要</th>
+                     
+                        <th>上传者</th>
+                      <th>上传时间</th>
+                       <th>操作</th>
+                    </tr>
+                  </thead>
+                  <tbody> 
+                 <volist name="note" id="notes">
+                    <tr>
+                    <td> <input name="id[]" type="checkbox" id="checkbox" value="{$notes.wid}" /></td>
+                    <td> {$notes.wid}</td>
+                    <td> {$notes.subject}</td>
+                    <td> {$notes.name}</td>
+                    <td> {$notes.title}</td>
+                    <td> {$notes.summary}</td>
+                     <td> {$notes.addtime}</td>
+                    <td> {$notes.updatetime}</td>
+                    <td> <a  href="__MODULE__/Note/del/id/{$notes.wid}">删除</a>/<a href="__MODULE__/Note/edit/id/{$notes.wid}">编辑</a></td>
+                    </tr>
+                  </volist>
+                    
+                    
+                  </tbody>
+                </table>
+                 
+                </div>
+                </form>
+              <div style="float:right">
+               {$page}
+               </div>
+              </div>
+            </div>
+          </div>
+  </div>
+  <style>
+  #enenen{
+    float:right;
+  }
+  table{
+    margin-top:20px;
+  }
+  </style>

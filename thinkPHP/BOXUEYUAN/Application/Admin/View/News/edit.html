@@ -1,0 +1,102 @@
+﻿
+              <div class="col-md-10 column">
+                <ul class="breadcrumb">
+                  <li>
+                     <a href="__MODULE__/Index/index"><span class="glyphicon  glyphicon-home"></span> 首页</a>
+                  </li>
+                  <li>
+                     <a href="__MODULE__/News/all">新闻管理</a>
+                  </li>
+                  <li class="active">
+                    编辑新闻
+                  </li>
+                </ul>
+                <div class="row" id="admin-admin"><h2>编辑新闻</h2></div><br/> 
+                <form action="" method="post">
+                 <volist name='newsx' id='newsx'>
+                   <table>
+                            <tr>
+                                <td>新闻标题:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="title" id="newsname" value="{$newsx.title}"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>年级:</td>
+                                <td>&nbsp;</td>
+                                <td><select name="grade">
+                                      <option value ="{$newsx.grade}">高{$newsx.grade}</option>
+                                      <option value ="一">高一</option>
+                                      <option value ="二">高二</option>
+                                      <option value="三">高三</option>
+                                    </select>
+                                </td>
+                            </tr>
+                             
+                            <tr>
+                                <td>科目:<span></span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="course" id="kemuname" value="{$newsx.course}"></td>
+                            </tr>
+                                                     
+                             <tr>
+                                <td>摘要:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="summary" id="kemuname" value="{$newsx.summary}"></td>
+                            </tr>
+                                   
+                         <tr>
+                                <td>发布人:<span></span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="name" id="kemuname" value="{$newsx.name}"></td>
+                            </tr>
+                             <tr>
+                                <td>发布社:<span>*</span></td>
+                                <td>&nbsp;</td>
+                                <td><input type="text" name="from" id="kemuname" value="{$newsx.from}"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>描述内容:<span>*</td>
+                                <td>&nbsp;</td>
+                                <td><textarea rows="10" cols="30" name="content">{$newsx.content}</textarea></td>
+                            </tr>
+                            <tr>
+                                <td><button type="submit" value="保存" id="save">保存</button></td>
+                                <td>&nbsp;</td>
+                                <td><button type="button"id="cancle" onclick="history.back(-1)">取消</button></td>
+                            </tr>
+                </table>
+                </volist>
+                </form>
+              </div>
+            </div>
+            <div class="container" style="background:rgb(0,112,189);margin-top:10px;">
+              <div class="row clearfix">
+                
+              </div>
+           
+          </div>
+        </div>
+      </div> 
+
+
+<script type="text/javascript">
+    $("#save").click(function(){
+    if($("#newsname").val()==''){
+      alert("新闻标题不能为空");
+    }
+    else if($("#kemuname").val()==''){
+      alert("科目不能为空");
+    }
+    else if($("#newsname").val()!='' && $("#kemuname").val()!='' ){
+        alert("成功");
+        window.location.href="news_all.html";
+    }
+  });
+    $("#cancle").click(function(){
+     window.history.go(0);
+});
+</script>
+      
+ 
